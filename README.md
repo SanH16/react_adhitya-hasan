@@ -1,2 +1,1 @@
-# react_adhitya-hasan
-Kumpulan tugas dari Alterra
+Kumpulan Tugas SI Batch 5 Alterra Academy
