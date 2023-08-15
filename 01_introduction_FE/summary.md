@@ -31,3 +31,6 @@ GitHub : Sebagai tempat untuk mengakses git yang bisa diakses melalui aplikasi c
 
 Web Security : Penggunaan protocol https untuk sekarang lebih baik dari segi keamanan dibandingkan dengan protocol http. 
 Package Manager : Tool yang memudahkan pengguna dalam mengatur packet perangkat lunak seperti yarn dan npm. Biasanya digunakan untuk pemasangan, konfigurasi paket, pendeteksi dependensi paket, update paket dan lain-lain. Paket merupakan berkas yang telah dikompilasi agar siap dieksekusi sistem.
+
+Link Google Docs Tugas Intro Front end :
+https://docs.google.com/document/d/14vGmlIQvCf4CBCGncduAdFAQcFI66qLzlkLTO14bYyI/edit?usp=sharing
