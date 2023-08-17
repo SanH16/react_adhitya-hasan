@@ -28,3 +28,8 @@ Soal Prioritas 2 (Nilai 20)
 
 ![06_merged](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/c1dcdd53-5cb2-44ba-9ce1-9e59a15289d4)
 
+Soal eksplorasi (Nilai 20)
+1. Dengan project terserah kalian, praktikkan salah satu workflow serderhana dan buktikan dengan Screenshoot. Github flow/gitflow/trunkbase
+
+Github flow : 
+
