@@ -22,4 +22,9 @@ Soal Prioritas 2 (Nilai 20)
 ![04_membuat-branch](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/8789cd16-075a-495a-8b2f-c0eb06c41bf0)
 
 5. Lakukan Pull Request pada branch tersebut sehingga akan menambah hal baru pada branch main/master.
-![05_pull-request](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/019ad852-9bd2-4538-902d-dd11f11e778d)
+
+![05_pull-request](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/160d6600-b996-49a7-b469-3debdf4c8a65)
+
+
+![06_merged](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/c1dcdd53-5cb2-44ba-9ce1-9e59a15289d4)
+
