@@ -9,3 +9,5 @@ Soal Eksplorasi (Nilai 20)
 1. Berhasil melakukan pixel perfect pada setiap bagian figma tersebut
 
 Hasil desain :
+
+![03_Figma](https://github.com/SanH16/react_adhitya-hasan/assets/100403644/6aa3e908-5532-4a39-a7c3-c90cd0916dd3)
