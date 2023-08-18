@@ -47,7 +47,8 @@ seterusnya sesuai dengan nama soal yang kalian kerjakan. buat folder tersebut sa
 ### Github flow : 
 
 <p align="center">
-    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/02_Git/Screenshots/01_soal-eksplorasi.png">
+    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/feat/02_Git-update/02_Git/Screenshots/01_soal-eksplorasi.png">
+    
 </p>
 
 # Resume Materi KMReact - Version Control and Branch Management (Git)
