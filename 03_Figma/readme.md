@@ -25,7 +25,7 @@ Figma merupakan tools yang biasa digunakan oleh desainer untuk mendesain produk 
 ## Hasil tugas desain Figma 
 
 <p align="center">
-    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/03_Figma/Screenshots/03_Figma-tugas.png">
+    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/feat/03_Figma/03_Figma/Screenshots/03_Figma-tugas.png">
 </p>
 
 ### - Link tugas Figma :
