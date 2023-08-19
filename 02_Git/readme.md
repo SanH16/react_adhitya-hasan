@@ -63,6 +63,7 @@ Git Workflow Collaboration adalah kerangka kerja yang divisualisasikan agar dapa
 - Develop : cabang branch untuk menampung fitur yang dibuat melalui branch feature, branch ini akan melakukan pengujian sistem, perbaikan code, sebelum di push ke main branch. 
 - Feature : berisikan semua history pekerjaan developer yang ditampung dalam branch feature sebelum di merge ke branch develo, branch feature menggunakan develop sebagai parent.
 
+
 ### - Syntax Git CLI
 - git init : menginisiasi repository sebelum dilakukan perubahan.
 - git add : menambahkan semua perubahan ke dalam staging area.
