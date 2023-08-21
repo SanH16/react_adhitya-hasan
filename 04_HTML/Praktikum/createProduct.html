@@ -1,103 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Product</title>
     <style>
-        * {
-            font-family: 'Times New Roman', Times, serif;
-            color: #000;
-            font-style: normal;
-            line-height: normal;
-            /* border: 1px solid green; */
-        }
-        h1 {
-            font-size: 32px;
-            font-weight: 400;
-        }
-        h2 {
-            font-size: 24px;
-            font-weight: 400;
-        }
-        label {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 4px;
-        }
-        p {
-            font-size: 12px;
-            font-weight: 400;
-        }
-        input {
-            width: 159px;
-            height: 14px;
-        }
-        select {
-            width: 71px;
-            height: 15px;
-            flex-shrink: 0;
-        }
-        .brand, .hank, .refurbished, .image {
-            display: flex;
-            flex-direction: row;
-            align-items: start;
-            gap: 6px;
-        }
-        button {
-            margin: 6px 0px;
-            width: 63px;
-            height: 20px;
-        }
+      * {
+        font-family: "Times New Roman", Times, serif;
+        color: #000;
+        font-style: normal;
+        line-height: normal;
+        /* border: 1px solid green; */
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin: 6px 0px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      input {
+        width: 159px;
+        height: 14px;
+      }
+      select {
+        width: 71px;
+        height: 25px;
+        flex-shrink: 0;
+      }
+      .brand,
+      .hank,
+      .refurbished,
+      .image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
+      .submit {
+        margin: 6px 0px;
+        width: 63px;
+        height: 20px;
+      }
+      textarea {
+        width: 241px;
+        height: 99px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Create Product</h1>
     <h2>Detail Product</h2>
-    <label for="product">
-        <p>Product name :</p>
-        <input type="text" id="product">
-    </label>
-    <label for="category">
-        <p>Product Category :</p>
-        <select name="category" id="category">
-            <option value=""></option>
-        </select>
-    </label>
-    <label for="product_freshness">
-        <p>Product Freshness :</p>
+    <form action="/04_HTML/Praktikum/landingPage.html">
+      <label for="product"> Product Name :</label>
+      <input type="text" id="product" name="product_name" minlength="6" maxlength="50" required />
+      <label for="category"> Product Category : </label>
+      <select name="category" id="category" required>
+        <option value="low">Low</option>
+        <option value="high">High</option>
+      </select>
+      <label for="product_freshness">Product Freshness</label>
         <div class="brand">
-            <input type="radio" name="product_freshness" id="brand" style="width: auto;">
-            <label for="brand" class="brand">Brand New</label>
+          <input
+            type="radio"
+            name="product_freshness"
+            id="brand"
+            style="width: auto" required
+          />
+          <label for="brand" class="brand">Brand New</label>
         </div>
         <div class="hank">
-            <input type="radio" name="product_freshness" id="hank" style="width: auto;">
-            <label for="hank">Second Hank</label>
+          <input
+            type="radio"
+            name="product_freshness"
+            id="hank"
+            style="width: auto"
+          />
+          <label for="hank">Second Hank</label>
         </div>
         <div class="refurbished">
-            <input type="radio" name="product_freshness" id="refurbished" style="width: auto;">
-            <label for="refurbished">Refurbished</label>
+          <input
+            type="radio"
+            name="product_freshness"
+            id="refurbished"
+            style="width: auto"
+          />
+          <label for="refurbished">Refurbished</label>
         </div>
-    </label>
-    <div class="image" style="margin: 6px 0px;">
+      </label>
+      <div class="image" style="margin: 6px 0px">
         <label for="file">Image of Product </label>
-        <input type="file" name="" id="file" style="width: auto; height: auto;">
-    </div>
-    <div>
-        <label for="description">
-            Additional Description
-        </label>
-        <textarea name="add_description" id="description" cols="30" rows="10" 
-        style="
-        width: 241px;
-        height: 99px;"></textarea>
-    </div>
-    <div class="price">
+        <input
+          type="file"
+          name=""
+          id="file"
+          style="width: auto; height: auto"
+          required
+        />
+      </div>
+      <div>
+        <label for="description"> Additional Description </label>
+        <textarea
+          name="add_description"
+          id="description"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <div class="price">
         <label for="price">Product Price :</label>
-        <input type="text" name="product_price" id="price" placeholder="$ 100"
-        style="width: 47px; height: 18px;">
-    </div>
-    <button>submit</button>
-</body>
+        <input
+          type="number"
+          name="product_price"
+          id="price"
+          placeholder="$ 100"
+          style="width: 47px; height: 18px; text-align: center"
+        />
+      </div>
+      <input
+        class="submit"
+        type="submit"
+        name="button_submit"
+        id="submit"
+        value="Submit"
+      />
+    </form>
+  </body>
 </html>
