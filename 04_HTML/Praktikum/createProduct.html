@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+            font-style: normal;
+            line-height: normal;
+            border: 1px solid green;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        input {
+            width: 159px;
+            height: 14px;
+        }
+        select {
+            width: 71px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+        .brand, .hank, .refurbished {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
+    <label for="product">
+        <p>Product name :</p>
+        <input type="text" id="product">
+    </label>
+    <label for="category">
+        <p>Product Category :</p>
+        <select name="category" id="category">
+            <option value=""></option>
+        </select>
+    </label>
+    <label for="product_freshness">
+        <p>Product Freshness :</p>
+        <div class="brand">
+            <input type="radio" name="product_freshness" id="brand" style="width: auto;">
+            <label for="brand" class="brand">Brand New</label>
+        </div>
+        <div class="hank">
+            <input type="radio" name="product_freshness" id="hank" style="width: auto;">
+            <label for="hank">Second Hank</label>
+        </div>
+        <div class="refurbished">
+            <input type="radio" name="product_freshness" id="refurbished" style="width: auto;">
+            <label for="refurbished">Refurbished</label>
+        </div>
+    </label>
+</body>
+</html>
