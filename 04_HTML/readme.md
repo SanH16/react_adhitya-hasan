@@ -31,6 +31,12 @@ HTML5 adalah versi teknologi dengan berbagai fitur html terbaru yang telah dikem
     <img src="Screenshots/04_HTML-landingPage-2.png" alt="gambar" />
 </p>
 
+## Create Account
+
+<p align="center">
+    <img src="Screenshots/04_HTML-createAccount.png" alt="gambar" />
+</p>
+
 # Task
 
 ## Soal Prioritas 1 (Nilai 80)
