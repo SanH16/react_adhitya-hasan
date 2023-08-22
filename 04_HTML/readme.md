@@ -8,11 +8,11 @@ HTML merupakan singkatan dari (Hypertext Markup Language) sebuah standar teknolo
 
 ### - Tag Dasar HTML
 
-HTML merupakan fondasi atau kerangka dasar dalam pengembangan web. Elemen seperti <html>, <head>, dan <body> adalah bagian penting struktur HTML. Adapun element atau tag html yang sering digunakan untuk membuat text heading seperti <h1> hingga <h6>, teks paragraf <p>, <ul> unordered list (list tidak berurut) dan <ol> ordered list (list berurutan) kemudian tag <a> hyperlink sebagai penghubung baik halaman itu sendiri ataupun halaman lainnya.
+HTML merupakan fondasi atau kerangka dasar dalam pengembangan web. Elemen seperti html, head, dan body adalah bagian penting struktur HTML. Adapun element atau tag html yang sering digunakan untuk membuat text heading seperti h1 hingga h6, teks paragraf p, ul unordered list (list tidak berurut) dan ol ordered list (list berurutan) kemudian tag 'a' hyperlink sebagai penghubung baik halaman itu sendiri ataupun halaman lainnya.
 
 ### - HTML5
 
-HTML5 adalah versi teknologi dengan berbagai fitur html terbaru yang telah dikembangkan untuk membangun website dengan Semantic Element agar dapat dibaca dengan mudah oleh SEO (Search Engine Optimization) seperti misal <header>, <main>, <nav>, <footer>, <section>, <article> dan sebagainya.
+HTML5 adalah versi teknologi dengan berbagai fitur html terbaru yang telah dikembangkan untuk membangun website dengan Semantic Element agar dapat dibaca dengan mudah oleh SEO (Search Engine Optimization) seperti misal header, main, nav, footer, section, article dan sebagainya.
 
 # Hasil Latihan HTML
 
@@ -30,3 +30,50 @@ HTML5 adalah versi teknologi dengan berbagai fitur html terbaru yang telah dikem
 <p align="center">
     <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/04_HTML/Screenshots/04_HTML-landingPage-2.png">
 </p>
+
+# Task
+
+## Soal Prioritas 1 (Nilai 80)
+
+Buatlah sebuah halaman Create Product dengan nama file createProduct.HTML
+
+<div>
+    <a href="createProduct.html">file createProduct.html</a>
+</div>
+
+Memiliki urutan dan nama form seperti di foto. atau bisa mengacu pada figma berikut. Link Figma
+
+<div>
+    <img src="Screenshots/04_HTML-createProduct.png" alt="gambar" />
+</div>
+
+## Soal Prioritas 2 (Nilai 20)
+
+Buatlah halaman landing Page dengan nama file landingPage.html dengan struktur seperti berikut. link figma
+
+<div>
+    <img src="Screenshots/04_HTML-landingPage-1.png" alt="gambar" />
+</div>
+<div>
+    <img src="Screenshots/04_HTML-landingPage-2.png" alt="gambar" />
+</div>
+
+## Soal Eksplorasi (Nilai 20)
+
+- Lakukan validasi “required” pada setiap form yang telah dibuat
+<div>
+    <img src="Screenshots/04_HTML-Required.png" alt="gambar" />
+</div>
+- Terapkan standart validasi berikut
+form product Product Name mempunyai minimal 6 huruf dan maksimal 50 huruf
+  <div><img src="Screenshots/04_HTML-min-maxlenght.png" alt="gambar" /></div>
+  Product Price harus berupa angka
+    <div><img src="Screenshots/04_HTML-price.png" alt="gambar" /></div>
+
+- Sambungkan halaman landingPage.html dengan CreateAccount.html sehingga dapat berpindah halaman
+<div>
+    <img src="Screenshots/04_HTML-pindah-halaman-1.png" alt="gambar" />
+</div>
+<div>
+    <img src="Screenshots/04_HTML-pindah-halaman-2.png" alt="gambar" />
+</div>
