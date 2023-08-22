@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+        color: #000;
+        font-style: normal;
+        line-height: normal;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 6px 0px;
+      }
+      input {
+        width: 159px;
+        height: 14px;
+      }
+      .male,
+      .female,
+      .other,
+      .language_id,
+      .language_eng,
+      .language_other {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
+      select {
+        width: 91px;
+        height: 20px;
+        margin-bottom: 0px 0px 0px 6px;
+      }
+      .submit {
+        margin: 6px 0px;
+        width: 63px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create Account</h1>
+    <h2>Detail Form</h2>
+    <form action="/04_HTML/Praktikum/landingPage.html">
+      <div>
+        <label for="first">First Name :</label>
+        <input type="text" name="first_name" id="first" required />
+      </div>
+      <div>
+        <label for="last">Last Name :</label>
+        <input type="text" name="last_name" id="last" required />
+      </div>
+      <div>
+        <label for="username">Username :</label>
+        <input type="text" name="user_name" id="username" required />
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="text" name="user_email" id="email" required />
+      </div>
+      <div>
+        <label for="gender">Gender :</label>
+        <div class="male">
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            style="width: auto"
+            required
+          />
+          <label for="male">Male</label>
+        </div>
+        <div class="female">
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            style="width: auto"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <div class="other">
+          <input
+            type="radio"
+            name="gender"
+            id="other"
+            style="width: auto"
+            required
+          />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div>
+        <label for="address">Address :</label>
+        <input type="text" name="user_address" id="address" required />
+      </div>
+      <div>
+        <label for="address2">Address 2 :</label>
+        <input type="text" name="user_address-2" id="address2" required />
+      </div>
+      <div>
+        <label for="nationality">Nasionality :</label>
+        <label
+          for="category-nationality"
+          style="font-size: 12px; font-weight: 400"
+          >Nasionality
+        </label>
+        <select name="category-nationality" id="category-nationality" required>
+          <option value="indonesia">WNI</option>
+          <option value="english">WNA</option>
+        </select>
+      </div>
+      <div>
+        <label for="language_spoken">Language Spoken :</label>
+        <div class="language_id">
+          <input
+            type="checkbox"
+            id="b_indonesia"
+            name="language_spoken"
+            style="width: auto"
+            value="Bahasa Indonesia"
+            required
+          />
+          <label for="b_indonesia">Bahasa Indonesia</label>
+        </div>
+        <div class="language_eng">
+          <input
+            type="checkbox"
+            id="b_english"
+            name="language_spoken"
+            style="width: auto"
+            value="English"
+          />
+          <label for="b_english">English</label>
+        </div>
+        <div class="language_other">
+          <input
+            type="checkbox"
+            id="b_other"
+            name="language_spoken"
+            style="width: auto"
+            value="Other"
+          />
+          <label for="b_other">Other</label>
+        </div>
+      </div>
+      <div>
+        <input
+          class="submit"
+          type="submit"
+          name="button_submit"
+          id="submit"
+          style="width: auto"
+          value="Create Account"
+        />
+      </div>
+    </form>
+  </body>
+</html>

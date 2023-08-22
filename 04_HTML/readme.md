@@ -73,8 +73,8 @@ Buatlah halaman landing Page dengan nama file landingPage.html dengan struktur s
 
 - Sambungkan halaman landingPage.html dengan CreateAccount.html sehingga dapat berpindah halaman
 <div>
-    <img src="Screenshots/04_HTML-pindah-halaman-1.png" alt="gambar" />
+    <img src="Screenshots/04_HTML-pindah-halaman1.png" alt="gambar" />
 </div>
 <div>
-    <img src="Screenshots/04_HTML-pindah-halaman-2.png" alt="gambar" />
+    <img src="Screenshots/04_HTML-pindah-halaman2.png" alt="gambar" />
 </div>
