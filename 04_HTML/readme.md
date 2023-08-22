@@ -19,16 +19,16 @@ HTML5 adalah versi teknologi dengan berbagai fitur html terbaru yang telah dikem
 ## Create Product
 
 <p align="center">
-    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/04_HTML/Screenshots/04_HTML-createProduct.png">
+    <img src="Screenshots/04_HTML-createProduct.png" alt="gambar" />
 </p>
 
 ## Landing Page
 
 <p align="center">
-    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/04_HTML/Screenshots/04_HTML-landingPage-1.png">
+    <img src="Screenshots/04_HTML-landingPage-1.png" alt="gambar" />
 </p>
 <p align="center">
-    <img src="https://github.com/SanH16/react_adhitya-hasan/blob/main/04_HTML/Screenshots/04_HTML-landingPage-2.png">
+    <img src="Screenshots/04_HTML-landingPage-2.png" alt="gambar" />
 </p>
 
 # Task
@@ -64,10 +64,11 @@ Buatlah halaman landing Page dengan nama file landingPage.html dengan struktur s
 <div>
     <img src="Screenshots/04_HTML-Required.png" alt="gambar" />
 </div>
+
 - Terapkan standart validasi berikut
-form product Product Name mempunyai minimal 6 huruf dan maksimal 50 huruf
-  <div><img src="Screenshots/04_HTML-min-maxlenght.png" alt="gambar" /></div>
-  Product Price harus berupa angka
+  form product Product Name mempunyai minimal 6 huruf dan maksimal 50 huruf
+    <div><img src="Screenshots/04_HTML-min-maxlenght.png" alt="gambar" /></div>
+    Product Price harus berupa angka
     <div><img src="Screenshots/04_HTML-price.png" alt="gambar" /></div>
 
 - Sambungkan halaman landingPage.html dengan CreateAccount.html sehingga dapat berpindah halaman
