@@ -11,6 +11,9 @@
 
 header {
   padding: calc(var(--header-height) / 2);
+  background-color: #fff;
+  /* width: 100%;
+  position: fixed; */
 }
 
 header > h2 {
@@ -20,7 +23,7 @@ header > h2 {
 }
 
 /* Hero Section */
-main {
+body {
   width: 100%;
   height: calc(100vh - var(--header-height) - var(--h2-height));
   background-color: #37517e;
@@ -28,14 +31,21 @@ main {
 }
 
 section.hero {
+  height: 560px;
   padding: 153px 83px 83px 83px;
 }
 
 section.newsletter {
   display: flex;
-  padding: 50px 426px;
+  padding: 56px 426px;
   background-color: #f3f5fa;
   /* border: 1px solid red; */
+}
+
+section.arsha {
+  height: 339px;
+  padding: 60px 80px 30px 80px;
+  background-color: #ffffff;
 }
 
 div.column {
@@ -111,26 +121,51 @@ a {
   box-shadow: 0 7px #3476ab;
 }
 
-.input-news a {
-  display: flex;
-  float: right;
-  width: 83px;
-  box-shadow: none;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .input-news {
+  /* border: 1px solid pink; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: relative;
 }
 
-input {
+.input-search {
   width: 516px;
   height: 40px;
-  border-radius: 50px 0 0 50px;
-  border-color: transparent;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  padding: 6px 120px 6px 22px;
+}
+
+.subscribed {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  justify-content: center;
+  /* float: right; */
+}
+
+button {
+  width: 123px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  background-color: #47b2e4;
+  color: #fff;
+  line-height: 24px; /* 150% */
+  letter-spacing: 1px;
+  border-radius: 50px;
+  border: none;
+}
+
+button.subscribed:hover {
+  background: #47b2e4;
+  color: #fff;
+  right: 7px;
+  box-shadow: -7px 0px #3476ab;
 }
 
 a.btn {
@@ -160,12 +195,13 @@ div.contain {
 }
 
 footer {
-  background-color: #333;
+  /* background-color: #333; */
   color: white;
   text-align: center;
   padding: 20px;
   bottom: 0;
 }
+
 /* div.tittle {
   display: flex;
   width: 600px;
