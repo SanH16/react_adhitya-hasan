@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 header {
@@ -20,50 +20,46 @@ header > h2 {
 }
 
 /* Hero Section */
-main {
+main,
+footer {
   width: 100%;
   height: calc(100vh - var(--header-height) - var(--h2-height));
   background-color: #37517e;
 }
 
 section.hero {
-  padding: 153px 83px 81px 82px;
+  padding: 153px 83px 83px 83px;
 }
 
-.right {
-  display: flex;
-  /* background-image: url("asset/asset-figma.png"); */
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-  background-size: contain; */
-}
 div.column {
   float: left;
-  width: 50%;
-  margin: 0 15px;
+  width: 49%;
+  /* border: 1px solid red; */
+  /* gap: 6px; */
 }
-div.right {
-  height: 427px;
+div.gambar {
+  display: flex;
+  flex-direction: column;
   float: right;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 div > h1 {
   color: #fff;
   font-size: 38px;
   font-weight: 700;
   line-height: 56px; /* 116.667% */
-  margin: 100px 41px 0 12px;
+  margin: 115px 81px 0 12px;
 }
 div > p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px; /* 120% */
-  margin: 0 6px 30px 12px;
+  margin: 0 6px 90px 12px;
 }
 h1,
-p {
+p,
+a {
   font-family: "Jost";
   font-style: normal;
 }
@@ -74,4 +70,42 @@ div.tittle {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+}
+a {
+  display: flex;
+  padding: 9px 28.359px 12px 28px;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 1px;
+  border-radius: 50px;
+  /* background: #47b2e4; */
+  background-color: #47b2e4;
+  cursor: pointer;
+  box-shadow: 0 7px #3476ab;
+}
+a.btn {
+  background: transparent;
+  border-color: #2196f3;
+  color: #fff;
+}
+
+a.btn:hover {
+  background: #47b2e4;
+  color: white;
+  opacity: 1;
+}
+.btn:active,
+a:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+div.contain {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 0 0 0 12px;
 }
