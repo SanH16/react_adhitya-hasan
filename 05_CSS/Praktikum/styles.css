@@ -1,0 +1,77 @@
+:root {
+  --header-height: 50px;
+  --h2-height: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid pink;
+}
+
+header {
+  padding: calc(var(--header-height) / 2);
+}
+
+header > h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: var(--h2-height);
+}
+
+/* Hero Section */
+main {
+  width: 100%;
+  height: calc(100vh - var(--header-height) - var(--h2-height));
+  background-color: #37517e;
+}
+
+section.hero {
+  padding: 153px 83px 81px 82px;
+}
+
+.right {
+  display: flex;
+  /* background-image: url("asset/asset-figma.png"); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: contain; */
+}
+div.column {
+  float: left;
+  width: 50%;
+  margin: 0 15px;
+}
+div.right {
+  height: 427px;
+  float: right;
+  margin-left: 24px;
+}
+div > h1 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  margin: 100px 41px 0 12px;
+}
+div > p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin: 0 6px 30px 12px;
+}
+h1,
+p {
+  font-family: "Jost";
+  font-style: normal;
+}
+div.tittle {
+  display: flex;
+  width: 600px;
+  height: 125px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
