@@ -22,7 +22,7 @@
   <body>
     <section class="container">
       <nav
-        class="fixed-top navbar navbar-expand-lg shadow-sm bg-body-tertiary rounded pt-3 px-4"
+        class="fixed-top navbar navbar-expand-lg shadow-sm bg-body-tertiary pt-3 px-4"
       >
         <div class="container-fluid">
           <h4 class="navbar-brand" href="#">Simple Header</h4>
@@ -224,7 +224,14 @@
           </div>
 
           <div class="mb-5 px-4" style="margin-top: 150px">
-            <button type="submit" class="w-100 btn btn-primary mt-4">
+            <button
+              type="submit"
+              class="w-100 btn btn-primary mt-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="This button is under construction."
+            >
               Submit
             </button>
           </div>
@@ -315,5 +322,14 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
