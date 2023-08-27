@@ -4,9 +4,21 @@
 
 ### - Bootstrap
 
-### -
+- Bootstrap adalah framwork CSS open source untuk membantu Frontend developer dalam membuat Website dengan template desain berbasiskan HTML dan CSS dengan berbagai komponen seperti button, form, navigation, font, grid dan sebagainya hanya dengan memanggil nama kelas dari dokumentasi Bootstrap. Selain itu, bootstrap memiliki ekstensi opsional JavaScript.
 
-### -
+### - Responsive Design
+
+- Dalam hal ini, bootstrap memberikan Layout responsive website hanya dengan menggunakan komponen class tertentu seperti nav, container, col, breakpoint dan grid system agar dapat responsive terhadap beberapa ukuran layar tertentu dari ponsel, tablet, hingga desktop.
+
+### - Berbagai Komponen siap pakai
+
+- Bootstrap membantu developer website dengan memberikan berbagai komponen yang siap pakai yang telah disusun dalam suatu class. Cara penggunaan nya cukup mudah seperti misal class="container mx-auto col-12". Adapun istilah Sicing and Spacing yang sering digunakan :
+  mx-0 : margin kanan kiri
+  px-0 : padding kanan kiri
+  col-lg-12 : kolom dengan ukuran layar Larger sebanyak 12 kolom
+  fs : font size (ukuran font)
+  fw : font weight (tinggi font)
+  h-0 / w-0 : lebar dan panjang dan masih banyak lagi.
 
 # Hasil Latihan Bootstrap
 
