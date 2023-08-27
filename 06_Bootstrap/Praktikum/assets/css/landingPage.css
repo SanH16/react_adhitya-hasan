@@ -102,13 +102,13 @@ div > p {
 
 h1,
 p,
-a,
+.abutton,
 h3 {
   font-family: "Jost";
   font-style: normal;
 }
 
-a {
+.abutton {
   display: flex;
   padding: 9px 28.359px 12px 28px;
   align-items: flex-start;
@@ -171,20 +171,20 @@ button.subscribed:hover {
   box-shadow: -7px 0px #3476ab;
 }
 
-a.btn {
+a.btns {
   background: transparent;
   border-color: #2196f3;
   color: #fff;
 }
 
-a.btn:hover {
+a.btns:hover {
   background: #47b2e4;
   color: white;
   opacity: 1;
 }
 
-a:active,
-.btn:active {
+.abutton:active,
+.btns:active {
   box-shadow: none;
   position: relative;
   top: 7px;
