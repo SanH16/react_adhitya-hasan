@@ -25,8 +25,8 @@ header > h2 {
 
 /* Hero Section */
 body {
-  width: 100%;
-  height: calc(100vh - var(--header-height) - var(--h2-height));
+  /* width: 100%;
+  height: calc(100vh - var(--header-height) - var(--h2-height)); */
   background-color: #37517e;
   /* height: 100vh; */
 }
@@ -34,13 +34,20 @@ body {
 section.hero {
   display: flex;
   flex-flow: row wrap;
-  height: 560px;
+  height: 80vh;
   padding: 153px 83px 83px 83px;
 }
 
 section.newsletter {
+  max-width: 1370px;
+  margin: auto;
   padding: 56px 426px;
   background-color: #f3f5fa;
+}
+
+div.news {
+  display: flex;
+  flex-flow: row wrap;
   /* border: 1px solid red; */
 }
 
