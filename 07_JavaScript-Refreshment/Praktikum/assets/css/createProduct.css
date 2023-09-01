@@ -29,3 +29,9 @@ a:active {
   background: #0d6efd !important;
   color: #fff !important;
 }
+
+.alert {
+  display: none;
+  border: 2px solid #eb9898;
+  background-color: transparent;
+}

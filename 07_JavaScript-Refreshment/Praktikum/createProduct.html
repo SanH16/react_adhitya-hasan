@@ -113,19 +113,19 @@
     <section id="product">
       <div class="col-lg-4 col-md-6 col-8 mx-auto">
         <h5 class="mb-3 mt-5">Detail Product</h5>
-        <form class="was-validated">
+        <form id="formProductName" method="post">
           <div class="col-lg-8 col-md-6 col-12 mt-3 mb-5">
             <label for="productName" class="form-label">Product name</label>
             <input
               type="text"
               class="form-control mt-2"
               id="productName"
+              name="productName"
               minlength="6"
               maxlength="50"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback">Please input your Product Name!</div>
+            <div class="alert text-danger mt-2" id="alertFeedback"></div>
           </div>
 
           <div class="col-lg-6 col-md-6 col-6 mb-5">
@@ -143,8 +143,10 @@
               <option value="2">High</option>
               <option value="3">Large</option>
             </select>
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback">Please select Category!</div>
+
+            <div class="alert text-danger mt-2" id="alertFeedback"></div>
+            <!-- <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please select Category!</div> -->
           </div>
 
           <div class="mb-5 col-lg-6 col-md-8 col-12">
@@ -155,8 +157,10 @@
               id="formFile"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback">Please input Image File!</div>
+
+            <div class="alert text-danger mt-2" id="alertFeedback"></div>
+            <!-- <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please input Image File!</div> -->
           </div>
 
           <div class="mb-3">
@@ -214,23 +218,21 @@
             <input
               type="number"
               class="form-control mt-2"
-              name="product-price"
+              name="productPrice"
               id="productPrice"
               placeholder="$ 1"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback">Please input a Price product!</div>
+            <div class="alert text-danger mt-2" id="alertFeedbackPrice"></div>
+            <!-- <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please input a Price product!</div> -->
           </div>
 
           <div class="mb-5 px-4" style="margin-top: 150px">
             <button
               type="submit"
+              id="submitButton"
               class="w-100 btn btn-primary mt-4"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              data-bs-custom-class="custom-tooltip"
-              data-bs-title="This button is under construction."
             >
               Submit
             </button>
@@ -310,26 +312,26 @@
           <button class="btn btn-primary mx-2 my-3" type="submit">
             Deletion
           </button>
-          <button class="btn btn-outline-primary my-3" type="submit">
+          <button
+            class="btn btn-outline-primary my-3"
+            type="submit"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="This button is under construction."
+          >
             Search
           </button>
         </form>
       </div>
     </section>
 
+    <script src="createProduct.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
-    </script>
   </body>
 </html>
