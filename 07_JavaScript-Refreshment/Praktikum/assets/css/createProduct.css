@@ -30,8 +30,10 @@ a:active {
   color: #fff !important;
 }
 
-.alert {
+div.alert {
   display: none;
-  border: 2px solid #eb9898;
+  border: none;
+  padding: 15px 5px;
+  font-size: 14px;
   background-color: transparent;
 }

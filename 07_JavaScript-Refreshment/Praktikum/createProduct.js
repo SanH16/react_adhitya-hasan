@@ -1,41 +1,91 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const formProductName = document.getElementById("formProductName");
-  const inputProductName = document.getElementById("productName");
+  const formPost = document.getElementById("formPost");
+  const inputProductName = formPost.querySelector("#productName");
+  const inputProductPrice = formPost.querySelector("#productPrice");
   const alertFeedback = document.getElementById("alertFeedback");
   const alertFeedbackPrice = document.getElementById("alertFeedbackPrice");
-  const inputProductPrice = document.getElementById("productPrice");
-  const submitButton = document.getElementById("submitButton");
+  const alertPcategory = document.getElementById("alertPcategory");
+  const alertPimage = document.getElementById("alertPimage");
+  const alertPdesc = document.getElementById("alertPdesc");
+  const submitButton = formPost.querySelector("button#submitButton");
   const inputChar = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
-  submitButton.addEventListener("click", function () {
-    const productName = inputProductName.value;
-    const productPrice = inputProductPrice.value;
+  formPost.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    validateInputs();
   });
 
-  inputProductName.addEventListener("input", function () {
+  const validateInputs = () => {
+    const productnameValue = productName.value.trim();
+    const productpriceValue = productPrice.value.trim();
+    const categoryValue = productCategory.value.trim();
+    const imageValue = formFile.value.trim();
+    const textValue = textArea.value.trim();
+
+    if (productnameValue == "") {
+      alertFeedback.style.display = "inline-block";
+      alertFeedback.textContent = `The Product Name field must be filled in`;
+      // alert(`The Product Name field must be filled in`);
+    } else if (productpriceValue == "") {
+      alert(`The Product Price field must be filled in`);
+    } else if (categoryValue == "") {
+      alertPcategory.style.display = "inline-block";
+      alertPcategory.textContent = `The Product Category field must be filled in`;
+      // alert(`The ${productCategory} field must be filled in`);
+    } else if (imageValue == "") {
+      alertPimage.style.display = "inline-block";
+      alertPimage.textContent = `The Image Product field must be filled in`;
+      // alert(`The ${formFile} field must be filled in`);
+    } else if (textValue == "") {
+      alertPdesc.style.display = "inline-block";
+      alertPdesc.textContent = `The Text Area field must be filled in`;
+      // alert(`The ${textArea} field must be filled in`);
+    } else {
+      alert(
+        `Looks good!🚀\n
+        Product Name : ( ${productnameValue} )
+        Product Category : ( ${categoryValue} )
+        Image Product : ( ${imageValue} )
+        Additional Description : ( ${textValue} )
+        Product Price : ( ${productpriceValue} )`
+      );
+    }
+  };
+
+  inputProductName.addEventListener("input", () => {
     if (productName.value.length > 10) {
       alertFeedback.style.display = "inline-block";
-      alertFeedback.innerHTML = "Product Name must not exceed 25 characters.";
+      alertFeedback.textContent = "Product Name must not exceed 25 characters.";
     } else if (inputChar.test(inputProductName.value)) {
       alertFeedback.style.display = "inline-block";
-      alertFeedback.innerHTML = "Name must not contain symbols.";
+      alertFeedback.textContent = "Name must not contain symbols.";
     } else {
       alertFeedback.style.display = "none";
     }
   });
 
+  inputProductPrice.addEventListener("input", () => {
+    if (productPrice.value.length > 0) {
+      alertFeedbackPrice.style.display = "none";
+    } else {
+      alertFeedbackPrice.style.display = "inline-block";
+      alertFeedbackPrice.textContent = "Please enter a valid Product price.🤖";
+    }
+  });
+
   if (inputProductName.value.trim() === "") {
     alertFeedback.style.display = "inline-block";
-    alertFeedback.innerHTML = "Please enter a valid Product name.";
+    alertFeedback.textContent = "Please enter a valid Product name.";
   } else {
     alertFeedback.style.display = "none";
   }
 
   if (inputProductPrice.value.trim() === "") {
     alertFeedbackPrice.style.display = "inline-block";
-    alertFeedbackPrice.innerHTML = "Please enter a valid Product price.";
+    alertFeedbackPrice.textContent = "Please enter a valid Product price.🤖";
   } else {
-    alertFeedback.style.display = "none";
+    alertFeedbackPrice.style.display = "none";
   }
 
   // productNameInput.value = "";

@@ -113,7 +113,12 @@
     <section id="product">
       <div class="col-lg-4 col-md-6 col-8 mx-auto">
         <h5 class="mb-3 mt-5">Detail Product</h5>
-        <form id="formProductName" method="post">
+        <form
+          name="formPost"
+          id="formPost"
+          method="post "
+          onsubmit="return validateForm()"
+        >
           <div class="col-lg-8 col-md-6 col-12 mt-3 mb-5">
             <label for="productName" class="form-label">Product name</label>
             <input
@@ -123,7 +128,6 @@
               name="productName"
               minlength="6"
               maxlength="50"
-              required
             />
             <div class="alert text-danger mt-2" id="alertFeedback"></div>
           </div>
@@ -135,8 +139,8 @@
             <select
               class="form-select mt-2"
               aria-label="Large select example"
+              name="productCategory"
               id="productCategory"
-              required
             >
               <option selected disabled>Choose..</option>
               <option value="1">Low</option>
@@ -144,7 +148,7 @@
               <option value="3">Large</option>
             </select>
 
-            <div class="alert text-danger mt-2" id="alertFeedback"></div>
+            <div class="alert text-danger mt-2" id="alertPcategory"></div>
             <!-- <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please select Category!</div> -->
           </div>
@@ -155,10 +159,9 @@
               class="form-control file-custom border-2 border-primary rounded-3 text-primary"
               type="file"
               id="formFile"
-              required
             />
 
-            <div class="alert text-danger mt-2" id="alertFeedback"></div>
+            <div class="alert text-danger mt-2" id="alertPimage"></div>
             <!-- <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please input Image File!</div> -->
           </div>
@@ -207,10 +210,10 @@
               class="form-control mt-3"
               id="textArea"
               rows="4"
-              required
             ></textarea>
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback">Please fill in the description!</div>
+            <div class="alert text-danger mt-2" id="alertPdesc"></div>
+            <!-- <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please fill in the description!</div> -->
           </div>
 
           <div class="mb-5 col-lg-12 col-md-8 col-12">
@@ -221,7 +224,6 @@
               name="productPrice"
               id="productPrice"
               placeholder="$ 1"
-              required
             />
             <div class="alert text-danger mt-2" id="alertFeedbackPrice"></div>
             <!-- <div class="valid-feedback">Looks good!</div>
