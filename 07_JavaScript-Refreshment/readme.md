@@ -4,9 +4,20 @@
 
 ### - JavaScript
 
-### - JavaScript
+Javascript merupakan bahasa pemrograman yang biasanya digunakan untuk mengembangkan aplikasi web interaktif. Dalam JavaScript dapat menambahkan kumpulan function, validasi, array, object, method, DOM / Manipulasi DOM dan berbagai Interaktivitas ke dalam halaman suatu website.
 
-### - JavaScript
+Banyak sekali komponen di dalam Javascript antara lain :
+
+- Tipe data, merupakan tipe dari suatu value didalam variable (cth: string, number, symbol ...).
+- Operator, biasanya digunakan jika ingin menjumlah, membandingkan satu operand dengan operand lainnya (cth: ++, -, ==, \*\*, //).
+- Conditional, menentukan statement kemudian dijalankan dalam suatu block (cth: if, else if, else, switch, ternary).
+- Array method , kumpulan method untuk memodifikasi key & values dari sekumpulan array, array dibungkus dengan [].
+- Object, kumpulan array yang dibungkus dalam suatu block {} yang biasa disebut dengan Object.
+- Looping, sebuah perulangan yang berjalan sesuai dengan kondisi didalam statement.
+- Function, kumpulan prosedur yang dapat dipanggil dan biasanya mengembalikan nilai sesuai operasi dalam parameternya.
+- DOM, Document Object Model biasanya digunakan untuk memanipulasi element HTML menjadi lebih interaktif.
+
+JavaScript, bahasa pemrograman yang dijalankan oleh mesin JavaScript yang ada dalam browser atau server. Hal ini membuat kode JavaScript tidak perlu dikompilasi sebelum dijalankan atau JavaScript merupakan intrepeter language. Javascript saat ini masih populer dan memiliki komunitas yang luas.
 
 ## Output yang dihasilkan
 
