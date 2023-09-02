@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alertFeedback.textContent = `The Product Name field must be filled in`;
       // alert(`The Product Name field must be filled in`);
     } else if (productpriceValue == "") {
-      alert(`The Product Price field must be filled in`);
+      alertFeedbackPrice.style.display = "inline-block";
+      alertFeedbackPrice.textContent = `The Product Price field must be filled in`;
+      // alert(`The Product Price field must be filled in`);
     } else if (categoryValue == "") {
       alertPcategory.style.display = "inline-block";
       alertPcategory.textContent = `The Product Category field must be filled in`;
@@ -48,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Product Category : ( ${categoryValue} )
         Image Product : ( ${imageValue} )
         Additional Description : ( ${textValue} )
-        Product Price : ( ${productpriceValue} )`
+        Product Price : ( ${productpriceValue} $)`
       );
     }
   };

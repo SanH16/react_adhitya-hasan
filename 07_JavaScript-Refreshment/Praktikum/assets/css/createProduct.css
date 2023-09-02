@@ -32,7 +32,7 @@ a:active {
 
 div.alert {
   display: none;
-  border: none;
+  border: 1px solid red;
   padding: 15px 5px;
   font-size: 14px;
   background-color: transparent;
