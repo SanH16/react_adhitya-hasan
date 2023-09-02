@@ -55,11 +55,11 @@ Pada halaman CreateProduct.html tangkap data pada form input tambahkan dengan JS
 - Validasi input setiap form bahwa field tidak boleh kosong. Jika field kosong saat form dikirim maka tampilkan pesan error “The xxx field must be filled in”
 
 <p align="center">
-    <img src="Screenshots/07_Javascript-filled-1" alt="gambar" />
+    <img src="Screenshots/07_Javascript-filled-1.png" alt="gambar" />
 </p>
 
 <p align="center">
-    <img src="Screenshots/07_Javascript-filled-2" alt="gambar" />
+    <img src="Screenshots/07_Javascript-filled-2.png" alt="gambar" />
 </p>
 
 ## Soal Eksplorasi (Nilai 20)
