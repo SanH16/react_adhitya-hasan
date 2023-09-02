@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+a {
+  color: #0d6efd !important;
+}
+
+a:hover {
+  color: #6f2bf3 !important;
+}
+
+a:active {
+  background: #0d6efd;
+  color: white !important;
+}
+/* .navbar-tittle {
+    font: normal normal 500 24px/18px "Roboto", arial, sans-serif;
+    color: var(--bs-dark, #212529);
+    line-height: normal;
+    letter-spacing: -0.32px;
+  } */
+
+.icon-bootstrap {
+  margin-top: 150px !important;
+}
+
+.file-custom::-webkit-file-upload-button {
+  background: #0d6efd !important;
+  color: #fff !important;
+}
+
+div.alert {
+  display: none;
+  border: 1px solid red;
+  padding: 15px 5px;
+  font-size: 14px;
+  background-color: transparent;
+}

@@ -1,0 +1,337 @@
+:root {
+  --header-height: 50px;
+  --h2-height: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* border: 1px solid pink; */
+}
+
+.anav {
+  color: #0d6efd !important;
+}
+
+.anav:hover {
+  color: #6f2bf3 !important;
+}
+
+.anav:active {
+  background: #0d6efd;
+  color: white !important;
+}
+
+/* Hero Section */
+body {
+  /* width: 100%;
+    height: calc(100vh - var(--header-height) - var(--h2-height)); */
+  background-color: #37517e;
+  /* height: 100vh; */
+}
+
+section.hero {
+  display: flex;
+  flex-flow: row wrap;
+  /* height: 80vh; */
+  padding: 153px 83px 83px 83px;
+}
+
+section.newsletterr {
+  /* max-width: 1370px; */
+  margin: auto;
+  padding: 56px 426px;
+  /* margin-top: 200px; */
+  background-color: #f3f5fa;
+}
+
+div.newss {
+  display: flex;
+  flex-flow: row wrap;
+  /* border: 1px solid red; */
+}
+
+section#arsha {
+  /* width: 100%; */
+  /* height: 339px; */
+  padding: 60px 80px 100px 80px;
+  background-color: #ffffff;
+}
+
+div.columnn {
+  float: left;
+  width: 49%;
+  /* border: 1px solid red; */
+  /* gap: 6px; */
+}
+
+.newss h3 {
+  color: #37517e;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+  margin: 6px 223px 20px 223px;
+}
+.newss p {
+  color: #444;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px; /* 150% */
+  margin: 0 69px 50px 69px;
+}
+
+.gambar {
+  display: flex;
+  flex-flow: row nowrap;
+  float: right;
+  height: 490px;
+  /* margin-left: 24px; */
+}
+
+div > h1 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  margin: 115px 81px 0 12px;
+}
+
+div > p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin: 0 6px 90px 12px;
+}
+
+h1,
+p,
+.abutton,
+h3 {
+  font-family: "Jost";
+  font-style: normal;
+}
+
+.abutton {
+  display: flex;
+  padding: 9px 28.359px 12px 28px;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 1px;
+  border-radius: 50px;
+  /* background: #47b2e4; */
+  background-color: #47b2e4;
+  cursor: pointer;
+  box-shadow: 0 7px #3476ab;
+}
+
+.input-newss {
+  /* border: 1px solid pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: relative;
+}
+
+.input-search {
+  width: 516px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  padding: 6px 120px 6px 22px;
+}
+
+.subscribed {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  justify-content: center;
+  /* float: right; */
+}
+
+button {
+  width: 123px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  background-color: #47b2e4;
+  color: #fff;
+  line-height: 24px; /* 150% */
+  letter-spacing: 1px;
+  border-radius: 50px;
+  border: none;
+}
+
+button.subscribed:hover {
+  background: #47b2e4;
+  color: #fff;
+  right: 7px;
+  box-shadow: -7px 0px #3476ab;
+}
+
+a.btns {
+  background: transparent;
+  border-color: #2196f3;
+  color: #fff;
+}
+
+a.btns:hover {
+  background: #47b2e4;
+  color: white;
+  opacity: 1;
+}
+
+.abutton:active,
+.btns:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+div.contain {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 0 0 0 12px;
+}
+
+footer > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+.under h5 {
+  font: normal normal 400 14px/21px "Open Sans";
+  color: #fff;
+}
+
+.under span {
+  color: rgba(71, 178, 228, 1);
+}
+
+/* arsha */
+.wrapper-arsha {
+  max-width: 1370px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+ul {
+  list-style: none;
+}
+.arsha-heading {
+  width: 22%;
+  padding: 0 15px;
+}
+.arsha-heading:nth-child(1) h4 {
+  font: normal normal 600 28px/28px "Jost";
+  color: #37517e;
+  text-transform: uppercase;
+}
+.arsha-heading h4 {
+  font: normal normal 700 18px/20px "Jost";
+  color: #37517e;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+}
+.arsha-heading ul#street li {
+  font-family: "Jost";
+  line-height: 28px;
+}
+.arsha-heading ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.arsha-heading ul li {
+  display: block;
+  font: normal normal 400 14px/20px "Open Sans";
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #777777;
+  transition: all 0.3s ease;
+}
+.arsha-heading ul li:hover {
+  color: #37517e;
+  padding-left: 10px;
+}
+.arsha-heading .icon-hover li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 24px 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(71, 178, 228, 1);
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.arsha-heading .icon-hover li:hover {
+  color: #444;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .arsha-heading,
+  .columnn {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .arsha-heading,
+  .columnn {
+    width: 100%;
+  }
+
+  .columnn h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 10% 0 5% 0;
+  }
+
+  .columnn p {
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 0 0;
+  }
+
+  .columnn .gambar {
+    height: 250px;
+    margin: 100% 0 0 0;
+  }
+
+  .contain a {
+    margin: 5% 0 0 0;
+    padding: 4px 16px 10px 16px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px; /* 150% */
+    text-align: center;
+  }
+
+  .newss h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    margin: 6px 0 20px 20px;
+  }
+}
