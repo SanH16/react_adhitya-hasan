@@ -26,7 +26,7 @@ JavaScript, bahasa pemrograman yang dijalankan oleh mesin JavaScript yang ada da
 </p>
 
 <p align="center">
-    <img src="Screenshots/07_Javascript-code.png" alt="gambar" />
+    <img src="Screenshots/07_Javascript-codes.png" alt="gambar" />
 </p>
 
 # Task
