@@ -37,3 +37,7 @@ div.alert {
   font-size: 14px;
   background-color: transparent;
 }
+
+table {
+  display: none;
+}

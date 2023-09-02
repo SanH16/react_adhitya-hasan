@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     validateInputs();
+    showInput();
   });
 
   const validateInputs = () => {
@@ -104,4 +105,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // productNameInput.value = "";
   // productPriceInput.value = "";
+
+  // Add data to table
+  const tableShow = document.querySelector("#tabel");
+
+  const showInput = () => {
+    tableShow.style.display = "block";
+
+    const radio = document.getElementsByName("flexradio");
+    const table = document.getElementsByTagName("table")[0];
+    const row = table.insertRow(table.rows.length);
+    const c0 = row.insertCell(0);
+    const c1 = row.insertCell(1);
+    const c2 = row.insertCell(2);
+    const c3 = row.insertCell(3);
+    const c4 = row.insertCell(4);
+    const c5 = row.insertCell(5);
+    const c6 = row.insertCell(6);
+
+    // auto increment number
+    for (let i = 0; i < table.rows.length; i++) {
+      c0.textContent = [i];
+    }
+
+    // checked radio
+    for (let q = 0; q < radio.length; q++) {
+      if (radio[q].checked) {
+        c4.textContent = radio[q].value;
+      }
+    }
+    c1.textContent = productName.value;
+    c2.textContent = productCategory.value;
+    c3.textContent = formFile.value;
+    c5.textContent = textArea.value;
+    c6.textContent = productPrice.value;
+  };
 });

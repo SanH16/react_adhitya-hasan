@@ -238,6 +238,7 @@
               type="submit"
               id="submitButton"
               class="w-100 btn btn-primary mt-4"
+              onclick="showInput()"
             >
               Submit
             </button>
@@ -249,7 +250,7 @@
     <section>
       <h2 class="text-center mt-5">List Product</h2>
       <div class="mx-5 w-75">
-        <table class="table table-striped table-hover">
+        <table class="table table-striped table-hover" id="tabel">
           <head>
             <tr class="fs-6">
               <th scope="col">No</th>
@@ -263,7 +264,7 @@
           </head>
 
           <body>
-            <tr class="fs-6">
+            <!-- <tr class="fs-6">
               <th scope="row" class="fw-medium">1,001</th>
               <td>Lorem</td>
               <td>ipsum</td>
@@ -298,7 +299,7 @@
               <td>Second Hand</td>
               <td>adipiscing</td>
               <td>9</td>
-            </tr>
+            </tr> -->
           </body>
         </table>
       </div>
