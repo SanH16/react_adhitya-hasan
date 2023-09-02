@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const alertPcategory = document.getElementById("alertPcategory");
   const alertPimage = document.getElementById("alertPimage");
   const alertPdesc = document.getElementById("alertPdesc");
+  const alertPfreshness = document.getElementById("alertPfreshness");
   const submitButton = formPost.querySelector("button#submitButton");
   const inputChar = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
@@ -21,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const productpriceValue = productPrice.value.trim();
     const categoryValue = productCategory.value.trim();
     const imageValue = formFile.value.trim();
+    // let x = document.getElementsByName("flexradio");
+    // const freshnessValue = radioBrand.value.trim();
+    const freshnessValue = (
+      radioBrand ||
+      radioSecondHand ||
+      radioRefurbished
+    ).value.trim();
     const textValue = textArea.value.trim();
 
     if (productnameValue == "") {
@@ -39,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alertPimage.style.display = "inline-block";
       alertPimage.textContent = `The Image Product field must be filled in`;
       // alert(`The ${formFile} field must be filled in`);
+    } else if (freshnessValue == "") {
+      alertPfreshness.style.display = "inline-block";
+      alertPfreshness.textContent = `The Product Freshness field must be filled in`;
     } else if (textValue == "") {
       alertPdesc.style.display = "inline-block";
       alertPdesc.textContent = `The Text Area field must be filled in`;
@@ -49,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Product Name : ( ${productnameValue} )
         Product Category : ( ${categoryValue} )
         Image Product : ( ${imageValue} )
+        Product Freshness : ( ${freshnessValue} )
         Additional Description : ( ${textValue} )
         Product Price : ( ${productpriceValue} $)`
       );

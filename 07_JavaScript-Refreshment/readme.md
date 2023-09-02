@@ -22,7 +22,7 @@ JavaScript, bahasa pemrograman yang dijalankan oleh mesin JavaScript yang ada da
 ## Output yang dihasilkan
 
 <p align="center">
-    <img src="Screenshots/07_Javascript-result.png" alt="gambar" />
+    <img src="Screenshots/07_Javascript-results.png" alt="gambar" />
 </p>
 
 <p align="center">
@@ -92,5 +92,5 @@ Pada halaman CreateProduct.html tangkap data pada form yang telah dibuat kemudia
 - jika semua form telah diisi sesuai dengan falidasi dan user melakukan klik pada button Submit maka akan terdapat alert yang mengeluarkan setiap data.
 
 <p align="center">
-    <img src="Screenshots/07_Javascript-result.png" alt="gambar" />
+    <img src="Screenshots/07_Javascript-results.png" alt="gambar" />
 </p>
