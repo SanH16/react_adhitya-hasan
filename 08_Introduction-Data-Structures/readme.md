@@ -2,7 +2,21 @@
 
 ## 3 Poin penting
 
+### - Data Structure
+
+- Data structure dalam JavaScript mengacu pada cara data disimpan didalam memori komputer secara terorganisasi yang dapat diakses dalam kode JavaScript. Data structure merupakan bagian penting dari pemrograman karena memungkinkan untuk mengelola data dengan lebih efisien dan efektif. Beberapa contoh data structure dalam JavaScript diantaranya : Array, Object, Sets, Map.
+
 ### - Array
+
+- Array adalah struktur data yang digunakan untuk menyimpan koleksi elemen yang dapat diakses melalui indeks numerik. Elemen-elemen dalam array dapat berupa tipe data apa pun, termasuk angka, string, objek, atau bahkan array lainnya. Adapun beberapa operasi Data Structure :
+  Reading : Membaca spesifik data indeks tertentu dalam suatu array, biasanya hanya menggunakan 1 steps untuk dapat melakukan operasi read data.
+  Searching : Mencari data dalam suatu array secara berurutan dan tidak dapat dilompati sebanyak index array tersebut (N + step)
+  Insert : Insert merupakan cara untuk memasukkan suatu nilai kedalam array, efisiensi dari penggunaan insert tergantung dengan method array yang digunakan, jika menggunakan .pop maka Insert hanya membutuhkan 1 steps saja.
+  Delete : Menghilangkan value pada indeks tertentu namun membutuhkan jumlah N steps untuk array yang banyak mengandung N data. Jika menghapus element terakhir maka steps yang digunakan hanya 1 saja, efisiensi operasi tergantung method apa yang digunakan.
+
+### - Object
+
+- Objek adalah struktur data yang digunakan untuk menyimpan data yang berpasangan antara key dengan values. Objek dalam JavaScript terdiri dari pasangan key-value pairs di mana setiap kunci (key) adalah string (atau simbol), dan nilainya (value) bisa berupa tipe data apa pun, termasuk string, angka, fungsi, objek lain, array, dan sebagainya.
 
 ## Hasil
 
