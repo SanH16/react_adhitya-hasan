@@ -103,9 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
     alertFeedbackPrice.style.display = "none";
   }
 
-  // productNameInput.value = "";
-  // productPriceInput.value = "";
-
   // Add data to table
   const tableShow = document.querySelector("#tabel");
 
@@ -139,5 +136,24 @@ document.addEventListener("DOMContentLoaded", function () {
     c3.textContent = formFile.value;
     c5.textContent = textArea.value;
     c6.textContent = productPrice.value;
+  };
+
+  // declare item delete
+  const searchProduct = document.getElementById("searchProduct");
+  const deletionBtn = searchProduct.querySelector("#deletionBtn");
+
+  deletionBtn.addEventListener("click", onDelete);
+
+  const onDelete = () => {
+    const table = document
+      .getElementById("tabel")
+      .getElementsByTagName("tbody")[0];
+    const leng = table.rows.length;
+    for (let i = 0; i < leng; i++) {
+      if (searchProduct.value === productName.value) {
+        // leng.splice(r, 1);
+        leng[i].pop();
+      }
+    }
   };
 });

@@ -311,16 +311,22 @@
           <input
             class="form-control"
             type="search"
-            name="search-product"
+            name="searchProduct"
             id="searchProduct"
             placeholder="Search By Product Name"
           />
-          <button class="btn btn-primary mx-2 my-3" type="submit">
+          <button
+            onclick="onDelete()"
+            class="btn btn-primary mx-2 my-3"
+            type="button"
+            id="deletionBtn"
+          >
             Deletion
           </button>
           <button
             class="btn btn-outline-primary my-3"
-            type="submit"
+            id="searchP"
+            type="button"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
             data-bs-custom-class="custom-tooltip"
