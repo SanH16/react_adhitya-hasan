@@ -157,27 +157,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   };
-
-  // searchBtn.addEventListener("click", onSearch);
-
-  // const onSearch = () => {
-  //   const table = document
-  //     .getElementById("tabel")
-  //     .getElementsByTagName("tbody")[0];
-  //   const search = table.rows.length;
-  //   for (var i = 0; i < search; i++) {
-  //     // search[i]
-  //     if (search === productName.value) {
-  //       alert(
-  //         `Looks good!🚀\n
-  //         Product Name : ( ${productname.value} )
-  //         Product Category : ( ${productCategory.value} )
-  //         Image Product : ( ${formFile.value} )
-  //         Product Freshness : ( ${radio[i].value} )
-  //         Additional Description : ( ${textArea.value} )
-  //         Product Price : ( ${productPrice.value} $)`
-  //       );
-  //     }
-  //   }
-  // };
 });
