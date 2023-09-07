@@ -4,6 +4,18 @@
 
 ## React
 
+ReactJS adalah Library javascript untuk membantu memudahkan dalam membuat User Interface (UI) yang interaktif dan cepat pada website maupun mobile (react native). ReactJS juga merupakan library open source yang dimaintain oleh Facebook sehingga membuat react menjadi teknologi yang popular dimana total unduhan react sendiri mencapai angka 19,3 juta kali di NPM.
+
+## 3 Keunggulan React
+
+- Declarative : deklaratif yang berarti menghasilkan sesuatu tanpa perlu menjelaskan langkah bagaimana kode tersebut diolah, berbeda dengan imperatif yang memerlukan langkah-langkah detail. misalnya javascript DOM dilakukan secara imperatif dimana jika ingin menghasilkan output diperlukan steps by steps bagaimana fungsi tersebut akan dilakukan.
+- Based Component : react berbasis komponen dalam menuliskan baris kode dan komponen tersebut bersifat reusable atau dapat digunakan kembali.
+- Learn Once, Write anywhere (flexible) : seperti yang dijelaskan sebelumnya, jika mempelajari react dalam konteks web development maka tidak menutup kemungkinan jika ingin migrasi menjadi mobile development menggunakan react native yang dimana cara penulisan kode untuk website dan mobile memiliki konsep yang hampir sama.
+
+## Virtual DOM (VDOM)
+
+Virtual DOM (DOM Virtual) adalah salah satu konsep kunci dalam React yang membantu meningkatkan kinerja dan efisiensi aplikasi web hal ini dikarenakan representasi UI dari JavaScript DOM (Document Object Model) yang disimpan dalam memori.
+
 # 📝 Task
 
 ## Soal Prioritas 1 (Nilai 80)
