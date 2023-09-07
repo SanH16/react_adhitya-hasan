@@ -33,3 +33,16 @@
 Buatlah project react menggunakan vite.
 Jalankan pada local
 How To Set Up a React Project with Vite | DigitalOcean
+
+<p align="center">
+    <img src="Screenshots/11_Introduction-React-vite-install.png" alt="gambar" />
+</p>
+<p align="center">
+    <img src="Screenshots/11_Introduction-React-vite-folder.png" alt="gambar" />
+</p>
+<p align="center">
+    <img src="Screenshots/11_Introduction-React-vite-run.png" alt="gambar" />
+</p>
+<p align="center">
+    <img src="Screenshots/11_Introduction-React-vite-run2.png" alt="gambar" />
+</p>
