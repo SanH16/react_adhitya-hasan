@@ -187,7 +187,7 @@
 
           <form class="row g-3 needs-validation" name="formPost" id="formPost" method="post" novalidate>
             <div class="col-6">
-              <label for="fistName" class="form-label fs-5">First name</label>
+              <label for="fistName" class="form-label fs-5 mb-3">First name</label>
               <input
                 type="text"
                 class="form-control rounded-5 py-2"
@@ -200,7 +200,7 @@
             </div>
 
             <div class="col-6">
-              <label for="lastName" class="form-label fs-5">Last name</label>
+              <label for="lastName" class="form-label fs-5 mb-3">Last name</label>
               <input
                 type="text"
                 class="form-control rounded-5 py-2"
@@ -212,9 +212,9 @@
               <div class="valid-feedback">Looks good!</div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mt-5">
               <label for="textArea">What can we help you with ?</label>
-              <textarea class="form-control mt-3" id="textArea" rows="4" placeholder="type me 🤖"></textarea>
+              <textarea class="form-control mt-3" id="textArea" rows="4" placeholder="type me 🤖" required></textarea>
             </div>
 
             <div class="form-group input-newsletter mb-3">
@@ -224,6 +224,7 @@
                 placeholder="Your email address"
                 aria-label="Your email address"
                 aria-describedby="button-subscribe"
+                required
               />
               <button class="btn subscribed" type="submit" id="button-subscribe">Subscribe</button>
             </div>
@@ -236,10 +237,79 @@
       </div>
     </main>
 
-    <footer>b</footer>
-
-    <!-- main script -->
-    <script src="script/index.js"></script>
+    <footer class="container col-12 mt-5">
+      <div class="row">
+        <div class="tripify-heading">
+          <img src="assets/img/logo-tripify.svg" alt="Logo" height="auto" class="d-inline-block align-text-top mb-4" />
+          <ul id="street">
+            <li>
+              Tripify is an innovative application designed to streamline the process of planning and organizing trips
+              for users.
+            </li>
+          </ul>
+          <div class="icon-hover">
+            <a href="https://github.com/SanH16" style="text-decoration: none">
+              <li><i class="fab fa-github"></i></li>
+            </a>
+            <a href="https://instagram.com/crzans" style="text-decoration: none">
+              <li><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="https://youtube.com/@adhityasan16" style="text-decoration: none">
+              <li><i class="fab fa-youtube"></i></li>
+            </a>
+            <a href="https://facebook.com/thegamersmock">
+              <li><i class="fab fa-facebook-f"></i></li>
+            </a>
+          </div>
+        </div>
+        <div class="tripify-heading">
+          <h4>Company</h4>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Patners</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Resources</h4>
+          <ul>
+            <li>Customer</li>
+            <li>Booking & guides</li>
+            <li>Api documentation</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Programs</h4>
+          <ul>
+            <li>Our programs</li>
+            <li>Our plans</li>
+            <li>Partnerships</li>
+            <li>Become a member</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Support</h4>
+          <ul>
+            <li>Privacy</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex col-12">
+        <div class="col-6 text-start">
+          <p class="copy">Copyright ©️ 2023 SanTech</p>
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://github.com/SanH16" style="text-decoration: none">
+            <p class="agency">Tripify Travel Agency | <span>https://github.com/SanH16</span></p>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!-- CDN Script Bootstrap -->
     <script
@@ -247,5 +317,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- main script -->
+    <script src="script/index.js"></script>
   </body>
 </html>

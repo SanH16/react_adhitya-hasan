@@ -198,3 +198,84 @@ button.subscribed:hover {
   color: whitesmoke;
   background: var(--Orange, #ff9c4c);
 }
+
+/* footer */
+footer.container {
+  margin-top: 180px !important;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.tripify-heading {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.tripify-heading h4 {
+  font: normal normal 700 18px/20px "Jost";
+  color: rgba(92, 103, 225, 0.8);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tripify-heading ul#street li {
+  font-family: "Jost";
+  line-height: 28px;
+}
+
+.tripify-heading ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.tripify-heading ul li {
+  display: block;
+  font: normal normal 400 14px/20px "Open Sans";
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #777777;
+  transition: all 0.3s ease;
+}
+
+.tripify-heading ul li:hover {
+  color: rgba(92, 103, 225, 0.69);
+  padding-left: 10px;
+}
+
+.tripify-heading .icon-hover li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 24px 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(92, 103, 225, 0.69);
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.tripify-heading .icon-hover li:hover {
+  color: #444;
+  background-color: #ffffff;
+}
+
+.copy,
+.agency {
+  color: var(--Soft-Grey, #898989);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+}
+
+.agency span {
+  color: #03c;
+  cursor: pointer;
+}
