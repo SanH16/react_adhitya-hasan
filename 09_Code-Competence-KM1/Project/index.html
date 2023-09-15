@@ -183,18 +183,51 @@
       <!-- Newsletter -->
       <div class="row mb-5" style="margin-top: 190px">
         <div class="col-6 pt-5">
-          <h1 class="newsletter">Get more update subscribe our Newsletter</h1>
+          <h1 class="newsletter mb-5">Get more update subscribe our Newsletter</h1>
 
-          <div class="form-group input-newsletter mb-3">
-            <input
-              type="email"
-              class="form-control input-email"
-              placeholder="Your email address"
-              aria-label="Your email address"
-              aria-describedby="button-subscribe"
-            />
-            <button class="btn subscribed" type="submit" id="button-subscribe">Subscribe</button>
-          </div>
+          <form class="row g-3 needs-validation" name="formPost" id="formPost" method="post" novalidate>
+            <div class="col-6">
+              <label for="fistName" class="form-label fs-5">First name</label>
+              <input
+                type="text"
+                class="form-control rounded-5 py-2"
+                id="fistName"
+                placeholder="Input your first name.."
+                value=""
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="col-6">
+              <label for="lastName" class="form-label fs-5">Last name</label>
+              <input
+                type="text"
+                class="form-control rounded-5 py-2"
+                id="lastName"
+                placeholder="Input your last name.."
+                value=""
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="col-12">
+              <label for="textArea">What can we help you with ?</label>
+              <textarea class="form-control mt-3" id="textArea" rows="4" placeholder="type me 🤖"></textarea>
+            </div>
+
+            <div class="form-group input-newsletter mb-3">
+              <input
+                type="email"
+                class="form-control input-email"
+                placeholder="Your email address"
+                aria-label="Your email address"
+                aria-describedby="button-subscribe"
+              />
+              <button class="btn subscribed" type="submit" id="button-subscribe">Subscribe</button>
+            </div>
+          </form>
         </div>
 
         <div class="col-5">
