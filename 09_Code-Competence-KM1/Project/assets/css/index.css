@@ -1,0 +1,7 @@
+a.nav-link {
+  /* display: inline-flex; */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
