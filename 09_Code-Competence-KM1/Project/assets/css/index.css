@@ -2,6 +2,7 @@
   font-family: "Roboto";
   font-style: normal;
   line-height: normal;
+  /* border: 1px solid red;  */
 }
 
 a.active {
@@ -13,7 +14,7 @@ a.nav-link {
   padding: 20px;
   justify-content: center;
   align-items: center;
-  margin: 0 30px;
+  margin: 0 25px;
 }
 
 a.nav-link:hover {
@@ -44,4 +45,149 @@ button.register {
 button.register:hover {
   color: whitesmoke;
   background: var(--Purple, #5c67e1);
+}
+
+button.discover {
+  color: whitesmoke;
+  width: 134px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 100%));
+  transition: all 0.3s ease;
+}
+
+button.discover:hover {
+  color: whitesmoke;
+  margin-left: 15px;
+  background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 0%));
+}
+
+main {
+  margin-top: 10rem !important;
+  /* border: 10px solid green; */
+}
+
+h1.tripify {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h1.newsletter {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+}
+
+.tripify span {
+  color: var(--Purple, #5c67e1);
+}
+
+img.tripify-image {
+  width: 700px;
+  height: 417px;
+  flex-shrink: 0;
+}
+
+img.newsletter-image {
+  height: 300px;
+  flex-shrink: 0;
+  margin: 0 0 0 15em;
+}
+
+p.text-paragraf {
+  color: var(--Soft-Grey, #898989) !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+div.destination {
+  margin-top: 50px;
+  border-color: transparent;
+  width: 1050px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--White, #fff);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav.shadow {
+  background-color: white !important;
+  box-shadow: 0px 2px 69px rgba(92, 103, 225, 0.69) !important;
+}
+
+img.img-fluid:hover {
+  color: whitesmoke;
+  margin-left: 5px;
+  box-shadow: -2px 5px 5px rgba(92, 103, 225, 0.69) !important;
+  transition: all 0.3s ease;
+}
+
+button.search {
+  color: whitesmoke;
+  width: 124px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--Orange, #ff9c4c);
+  transition: all 0.3s ease;
+}
+
+button.search:hover {
+  color: whitesmoke;
+  margin-left: 15px;
+  background: var(--Purple, #5c67e1);
+}
+
+.card-img {
+  width: 70px;
+  height: 80px;
+  margin: 3em 0 2em 2em;
+}
+
+.card-img:hover {
+  color: whitesmoke;
+  box-shadow: -2px 5px 5px rgba(92, 103, 225, 0.69) !important;
+  transition: all 0.3s ease;
+}
+
+.services:hover {
+  border-color: transparent;
+  background: var(--White, #fff);
+  box-shadow: -2px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-newsletter {
+  display: flex;
+  position: relative;
+}
+
+.input-email {
+  width: 38rem;
+  height: 70px;
+  border: none;
+  font-size: 15px;
+  padding: 0 0 0 20px;
+  box-shadow: -2px 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.subscribed {
+  width: 123px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 50px;
+  position: absolute;
+  display: inline-block;
+  align-self: center;
+  right: 15px;
+  color: whitesmoke;
+  background-color: #5c67e1;
+}
+
+button.subscribed:hover {
+  color: whitesmoke;
+  background: var(--Orange, #ff9c4c);
 }
