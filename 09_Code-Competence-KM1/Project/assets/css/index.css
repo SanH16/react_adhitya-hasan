@@ -279,3 +279,11 @@ ul {
   color: #03c;
   cursor: pointer;
 }
+
+div.alert {
+  display: none;
+  border: 2px solid pink;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #444 !important;
+}
