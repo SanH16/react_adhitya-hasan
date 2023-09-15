@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       alert(
         `Welcome to Tripify!🚀\n
-        Mr ${firstNameValue} ${lastNameValue}
-        Request for : ( ${areaValue} ) 
-        Your Email : ( ${emailValue} )`
+        Hello Mr ${firstNameValue} ${lastNameValue}✨
+        Request for : ${areaValue}  
+        Your Email : ( ${emailValue} 🌐)`
       );
       console.log(firstNameValue);
     }
@@ -66,6 +66,16 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       alertLastName.style.display = "none";
     }
+  });
+
+  document.getElementById("scroll-down").addEventListener("click", function () {
+    window.scrollTo(0, document.body.scrollHeight * 0.3);
+  });
+  document.getElementById("scroll-up").addEventListener("click", function () {
+    window.scrollTo(0, document.body.scrollTop * 0.3);
+  });
+  document.getElementById("scroll-news").addEventListener("click", function () {
+    window.scrollTo(0, document.body.scrollHeight * 0.55);
   });
 
   if (inputFirstName.value.trim() === "") {
