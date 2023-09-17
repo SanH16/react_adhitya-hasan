@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripify</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesome Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <section class="container">
+      <nav class="fixed-top navbar navbar-expand-lg bg-white py-4">
+        <div class="container-fluid col-10">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo-tripify.svg" alt="Logo" height="auto" class="d-inline-block align-text-top" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav head">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <button type="button" class="btn sign-in me-4">Sign In</button>
+            <button type="button" class="btn register">Register</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <main class="container col-10">
+      <!-- Main content -->
+      <div class="row">
+        <div class="col-5 pt-5">
+          <h1 class="tripify">Temukan tempat impian anda di <span>Tripify.</span></h1>
+          <p class="text-paragraf mt-4">Discover the world like never before with our innovative travel app.</p>
+          <button id="scroll-down" type="button" class="btn discover mt-3">Discover Now</button>
+        </div>
+
+        <div class="col-7">
+          <img src="assets/img/trip-vector.png" alt="" class="tripify-image" />
+        </div>
+      </div>
+
+      <!-- Destination content -->
+      <div class="row justify-content-center">
+        <div class="container-fluid card destination col-12">
+          <div class="row ms-3 my-auto">
+            <div class="col-3">
+              <div class="card" style="border-color: transparent">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="assets/icon/icon-flag.svg" class="img-fluid rounded" alt="Flag" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-text text-secondary">Destination</p>
+                      <p class="card-text"><small class="text-black fw-medium">Jakarta, Indonesia</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" style="border-color: transparent">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="assets/icon/icon-dollar.svg" class="img-fluid rounded" alt="Price" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-text text-secondary">Average Price</p>
+                      <p class="card-text"><small class="text-black fw-medium">$120 - $900</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" style="border-color: transparent">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="assets/icon/icon-date.svg" class="img-fluid rounded" alt="Date" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-text text-secondary">Date</p>
+                      <p class="card-text"><small class="text-black fw-medium">September 2023</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 my-auto">
+              <div class="card" style="border-color: transparent">
+                <div class="row ms-3 align-items-center">
+                  <div class="col-12">
+                    <button id="scroll-news" type="button" class="btn search">
+                      <i class="fa fa-search text-white me-3"></i>Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service content -->
+      <div class="row mb-5" style="margin-top: 190px">
+        <div class="col-4 pt-5 me-5">
+          <h1 class="tripify">We Offer🚀 best services</h1>
+          <p class="text-paragraf mt-4">Discover the world like never before with our innovative travel app.</p>
+          <button id="scroll-up" type="button" class="btn discover mt-3">Explore more</button>
+        </div>
+
+        <div class="col-3 ms-5">
+          <div class="card rounded-5 services">
+            <img src="assets/icon/icon-plane.svg" class="card-img" alt="Tour" />
+
+            <div class="card-body">
+              <h2 class="card-title ms-3 fw-bold mb-4">Best tour guide</h2>
+              <p class="card-text text-secondary mx-3 mb-2" style="font-size: 15px; font-weight: 300">
+                Discover the world like never before with our innovate travel app. Discover the world like never before
+                with our innovate travel app. DIscover the world.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card rounded-5 services">
+            <img src="assets/icon/icon-atm.svg" class="card-img" alt="Booking" />
+
+            <div class="card-body">
+              <h2 class="card-title ms-3 fw-bold mb-4">Easy booking</h2>
+              <p class="card-text text-secondary mx-3 mb-2" style="font-size: 15px; font-weight: 300">
+                Discover the world like never before with our innovate travel app. Discover the world like never before
+                with our innovate travel app. DIscover the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="row mb-5" style="margin-top: 190px">
+        <div class="col-6 pt-5">
+          <h1 class="newsletter mb-5">Get more update subscribe our Newsletter</h1>
+
+          <form class="row g-3" name="formPost" id="formPost" method="post" onsubmit="return validateForm()">
+            <div class="col-6">
+              <label for="firstName" class="form-label fs-5 mb-3">First name</label>
+              <input
+                type="text"
+                class="form-control rounded-5 py-2"
+                id="firstName"
+                name="firstName"
+                placeholder="Input your first name.."
+              />
+              <div class="alert text-danger mt-2" id="alertFirstName"></div>
+            </div>
+
+            <div class="col-6">
+              <label for="lastName" class="form-label fs-5 mb-3">Last name</label>
+              <input
+                type="text"
+                class="form-control rounded-5 py-2"
+                id="lastName"
+                name="lastName"
+                placeholder="Input your last name.."
+              />
+              <div class="alert text-danger mt-2" id="alertLastName"></div>
+            </div>
+
+            <div class="col-12 mt-5">
+              <label for="textArea">What can we help you with ?</label>
+              <textarea
+                class="form-control mt-3"
+                id="textArea"
+                name="textArea"
+                rows="4"
+                placeholder="type me 🤖"
+              ></textarea>
+              <div class="alert text-danger mt-2" id="alertTextArea"></div>
+            </div>
+
+            <div class="form-group input-newsletter mb-3">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-control input-email"
+                placeholder="Your email address"
+              />
+              <div class="alert text-danger mt-2" id="alertEmail"></div>
+              <button id="buttonSubscribe" type="submit" class="btn subscribed">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-5">
+          <img src="assets/img/newsletter-vector.png" alt="Update vector" class="newsletter-image" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="container col-12 mt-5">
+      <div class="row">
+        <div class="tripify-heading">
+          <img src="assets/img/logo-tripify.svg" alt="Logo" height="auto" class="d-inline-block align-text-top mb-4" />
+          <ul id="street">
+            <li>
+              Tripify is an innovative application designed to streamline the process of planning and organizing trips
+              for users.
+            </li>
+            <li>
+              <strong>Phone:</strong> +62 895 3831 38600 <br />
+              <strong>Email:</strong> adhityahasan011@gmail.com
+            </li>
+          </ul>
+          <div class="icon-hover">
+            <a href="https://github.com/SanH16" style="text-decoration: none">
+              <li><i class="fab fa-github"></i></li>
+            </a>
+            <a href="https://instagram.com/crzans" style="text-decoration: none">
+              <li><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="https://youtube.com/@adhityasan16" style="text-decoration: none">
+              <li><i class="fab fa-youtube"></i></li>
+            </a>
+            <a href="https://facebook.com/thegamersmock">
+              <li><i class="fab fa-facebook-f"></i></li>
+            </a>
+          </div>
+        </div>
+        <div class="tripify-heading">
+          <h4>Company</h4>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Patners</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Resources</h4>
+          <ul>
+            <li>Customer</li>
+            <li>Booking & guides</li>
+            <li>Api documentation</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Programs</h4>
+          <ul>
+            <li>Our programs</li>
+            <li>Our plans</li>
+            <li>Partnerships</li>
+            <li>Become a member</li>
+          </ul>
+        </div>
+        <div class="tripify-heading">
+          <h4>Support</h4>
+          <ul>
+            <li>Privacy</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex col-12">
+        <div class="col-6 text-start">
+          <p class="copy">Copyright ©️ 2023 SanTech</p>
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://github.com/SanH16" style="text-decoration: none">
+            <p class="agency">Tripify Travel Agency | <span>https://github.com/SanH16</span></p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- main script -->
+    <script src="script/index.js"></script>
+
+    <!-- CDN Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

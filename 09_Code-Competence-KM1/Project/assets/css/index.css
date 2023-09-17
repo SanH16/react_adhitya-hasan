@@ -1,0 +1,289 @@
+* {
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: normal;
+  /* border: 1px solid red;  */
+}
+
+a.active {
+  color: var(--Purple, #5c67e1) !important;
+}
+
+a.nav-link {
+  color: #000;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+a.nav-link:hover {
+  color: var(--Purple, #5c67e1);
+}
+
+ul.head {
+  margin-right: 10rem;
+}
+
+button.sign-in {
+  color: #000;
+  outline: transparent;
+  font-weight: 500;
+  margin: 10px 0;
+  width: 120px;
+  background-color: transparent;
+}
+
+button.register {
+  color: whitesmoke;
+  background: var(--Orange, #ff9c4c);
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 120px;
+}
+
+button.register:hover {
+  color: whitesmoke;
+  background: var(--Purple, #5c67e1);
+}
+
+button.discover {
+  color: whitesmoke;
+  width: 134px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 100%));
+  transition: all 0.3s ease;
+}
+
+button.discover:hover {
+  color: whitesmoke;
+  margin-left: 15px;
+  background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 0%));
+}
+
+main {
+  margin-top: 10rem !important;
+  /* border: 10px solid green; */
+}
+
+h1.tripify {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h1.newsletter {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+}
+
+.tripify span {
+  color: var(--Purple, #5c67e1);
+}
+
+img.tripify-image {
+  width: 700px;
+  height: 417px;
+  flex-shrink: 0;
+}
+
+img.newsletter-image {
+  height: 300px;
+  flex-shrink: 0;
+  margin: 5em 0 0 15em;
+}
+
+p.text-paragraf {
+  color: var(--Soft-Grey, #898989) !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+div.destination {
+  margin-top: 50px;
+  border-color: transparent;
+  width: 1050px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--White, #fff);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav.shadow {
+  /* height: 80px; */
+  background-color: white !important;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 69px rgba(92, 103, 225, 0.69) !important;
+}
+
+img.img-fluid:hover {
+  color: whitesmoke;
+  margin-left: 5px;
+  box-shadow: -2px 5px 5px rgba(92, 103, 225, 0.69) !important;
+  transition: all 0.3s ease;
+}
+
+button.search {
+  color: whitesmoke;
+  width: 124px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--Orange, #ff9c4c);
+  transition: all 0.3s ease;
+}
+
+button.search:hover {
+  color: whitesmoke;
+  margin-left: 15px;
+  background: var(--Purple, #5c67e1);
+}
+
+.card-img {
+  width: 70px;
+  height: 80px;
+  margin: 3em 0 2em 2em;
+}
+
+.card-img:hover {
+  color: whitesmoke;
+  box-shadow: -2px 5px 5px rgba(92, 103, 225, 0.69) !important;
+  transition: all 0.3s ease;
+}
+
+.services:hover {
+  border-color: transparent;
+  background: var(--White, #fff);
+  box-shadow: -2px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-newsletter {
+  display: flex;
+  position: relative;
+}
+
+.input-email {
+  width: 38rem;
+  height: 70px;
+  border: none;
+  font-size: 15px;
+  padding: 0 0 0 20px;
+  box-shadow: -2px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+input.rounded-5,
+textarea {
+  border: none;
+  box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.subscribed {
+  width: 123px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 50px;
+  position: absolute;
+  display: inline-block;
+  align-self: center;
+  right: 15px;
+  color: whitesmoke;
+  background-color: #5c67e1;
+}
+
+button.subscribed:hover {
+  color: whitesmoke;
+  background: var(--Orange, #ff9c4c);
+}
+
+/* footer */
+footer.container {
+  margin-top: 180px !important;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.tripify-heading {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.tripify-heading h4 {
+  font: normal normal 700 18px/20px "Jost";
+  color: rgba(92, 103, 225, 0.8);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tripify-heading ul#street li {
+  font-family: "Jost";
+  line-height: 28px;
+}
+
+.tripify-heading ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.tripify-heading ul li {
+  display: block;
+  font: normal normal 400 14px/20px "Open Sans";
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #777777;
+  transition: all 0.3s ease;
+}
+
+.tripify-heading ul li:hover {
+  color: rgba(92, 103, 225, 0.69);
+  padding-left: 10px;
+}
+
+.tripify-heading .icon-hover li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 24px 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(92, 103, 225, 0.69);
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.tripify-heading .icon-hover li:hover {
+  color: #444;
+  background-color: #ffffff;
+}
+
+.copy,
+.agency {
+  color: var(--Soft-Grey, #898989);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+}
+
+.agency span {
+  color: #03c;
+  cursor: pointer;
+}
+
+div.alert {
+  display: none;
+  border: 2px solid pink;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #444 !important;
+}
