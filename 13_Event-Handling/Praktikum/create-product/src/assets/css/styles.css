@@ -1,0 +1,37 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+a {
+  color: #0d6efd !important;
+}
+
+a:hover {
+  color: #6f2bf3 !important;
+}
+
+a:active {
+  background: #0d6efd;
+  color: white !important;
+}
+
+.icon-bootstrap {
+  margin-top: 150px !important;
+}
+
+.file-custom::-webkit-file-upload-button {
+  background: #0d6efd !important;
+  color: #fff !important;
+}
+
+div.alert {
+  display: none;
+  border: 1px solid red;
+  padding: 15px 5px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+/* table {
+    display: none;
+  } */
