@@ -6,6 +6,7 @@ const GenerateNumber = () => {
   const generateRandom = () => {
     const numbers = Math.floor(Math.random() * 100) + 1;
     setNumber(numbers);
+    console.log(numbers);
   };
 
   return (

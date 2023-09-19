@@ -114,7 +114,6 @@ const FormProduct = () => {
               <option value="High">High</option>
               <option value="Expensive">Expensive</option>
             </select>
-            <div className="alert text-danger mt-2" id="alertProductCategory" />
           </div>
           <div className="mb-5 col-lg-6 col-md-8 col-12">
             <label htmlFor="formFile" className="form-label">
@@ -128,7 +127,6 @@ const FormProduct = () => {
               accept="image/*"
               onChange={handleChange}
             />
-            <div className="alert text-danger mt-2" id="alertProductImage" />
           </div>
           <div className="mb-3">
             <label htmlFor="">Product Freshness</label>
@@ -172,7 +170,6 @@ const FormProduct = () => {
                 Refurbished
               </label>
             </div>
-            <div className="alert text-danger mt-2" id="alertProductFreshness" />
           </div>
           <div className="mb-5 col-lg-12 col-md-8 col-12">
             <label htmlFor="textArea">Additional Description</label>
@@ -184,7 +181,6 @@ const FormProduct = () => {
               value={values.textArea}
               onChange={handleChange}
             />
-            <div className="alert text-danger mt-2" id="alertDescription" />
           </div>
           <div className="mb-5 col-lg-12 col-md-8 col-12">
             <label htmlFor="productPrice">Product Price</label>
@@ -197,9 +193,8 @@ const FormProduct = () => {
               onChange={handleChange}
               placeholder="$ 1"
             />
-            <div className="alert text-danger mt-2" id="alertFeedbackPrice" />
           </div>
-          <div className="mb-5 px-4" style={{ marginTop: 150 }}>
+          <div className="mb-5 px-4" style={{ marginTop: 10 }}>
             <button type="submit" id="submitButton" className="w-100 btn btn-primary mt-4">
               Submit
             </button>
