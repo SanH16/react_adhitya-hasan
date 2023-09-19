@@ -9,7 +9,7 @@ export default function Header() {
   });
   return (
     <section className="container">
-      <nav className="fixed-top navbar navbar-expand-lg bg-white py-4 px-4">
+      <nav className="fixed-top navbar navbar-expand-lg bg-transparent py-4 px-4">
         <div className="container-fluid">
           <h4 className="navbar-brand" href="/">
             Simple Header
