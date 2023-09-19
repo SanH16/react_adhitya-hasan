@@ -19,12 +19,12 @@ const TableProduct = () => {
                 <th scope="row" className="fw-medium">
                   1,001
                 </th>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
+                <td>Product Name</td>
+                <td>Product Category</td>
+                <td>Image of Product</td>
                 <td>Brand New</td>
-                <td>adipiscing</td>
-                <td>1</td>
+                <td>Additional Description</td>
+                <td>Product Price</td>
               </tr>
               <tr className="fs-6">
                 <th scope="row" className="fw-medium">
