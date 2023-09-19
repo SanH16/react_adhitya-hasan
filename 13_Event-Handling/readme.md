@@ -4,9 +4,23 @@
 
 ### - Event Handling
 
+Event handling di React adalah proses untuk menanggapi suatu event yang terjadi pada komponen React. Misalkan event klik, hover, keypress, dan lain-lain.
+Contoh event handling yang sering digunakan di React:
+
+Click event : aktif untuk klik pada komponen React.
+Hover event : untuk kursor mouse yang berada di atas komponen React.
+Keypress event : aktif ketika tombol di hold.
+Scroll event : aktif ketika menggulir halaman.
+
+### Stateful dan Stateless
+
+Stateful dan stateless adalah dua jenis komponen React. Komponen stateful adalah komponen yang memiliki state, sedangkan komponen stateless adalah komponen yang tidak memiliki state.
+
+Sedangkan state adalah data yang dimiliki oleh komponen React. State dapat berubah seiring waktu, dan perubahan state biasanya membuat komponen untuk rendering ulang.
+
 # Task
 
-### Soal Prioritas 1 (Nilai 80)
+## Soal Prioritas 1 (Nilai 80)
 
 - Buatlah sebuah button dan terapkan event handling onClick pada salah satu tombol dihalaman CreateProduct.jsx. Jika tombol tersebut di-klik nantinya akan menampilkan random number di console.
 
@@ -29,7 +43,7 @@
     <img src="Screenshots/article-code.png" alt="gambar" />
 </p>
 
-### Soal Prioritas 2 (Nilai 20)
+## Soal Prioritas 2 (Nilai 20)
 
 Gunakan event handling onChange untuk validasi value secara realtime yang dimasukan kedalam form input. Validasi ini meliputi :
 
@@ -50,7 +64,7 @@ Gunakan event handling onChange untuk validasi value secara realtime yang dimasu
     <img src="Screenshots/handlechange-name.png" alt="gambar" />
 </p>
 
-### Soal Eksplorasi (Nilai 20)
+## Soal Eksplorasi (Nilai 20)
 
 Pada halaman CreateProduct.jsx lakukan validasi seperti berikut
 
