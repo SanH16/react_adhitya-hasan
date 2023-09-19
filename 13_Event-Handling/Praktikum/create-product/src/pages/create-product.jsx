@@ -1,6 +1,8 @@
 import Header from "./components/header";
 import FormProduct from "./components/form-product";
 import TableProduct from "./components/table-product";
+import GenerateNumber from "./components/generate-number";
+import Article from "./components/article";
 import logo from "../assets/images/bootstrap-logo.svg";
 import "../assets/css/styles.css";
 
@@ -15,14 +17,14 @@ export default function CreateProduct() {
           src={logo}
           alt="Bootstrap Icon"
         />
-        <h1 className="mt-4">Create Product</h1>
-        <p>
-          Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a <br />
-          validation state that can be triggered by attempting to submit the form without completing it.
-        </p>
+        <div className="container mx-auto">
+          <Article />
+        </div>
       </section>
+
       <FormProduct />
       <TableProduct />
+      <GenerateNumber />
     </>
   );
 }

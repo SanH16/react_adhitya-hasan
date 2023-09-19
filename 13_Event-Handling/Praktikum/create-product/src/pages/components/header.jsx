@@ -1,7 +1,15 @@
 export default function Header() {
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("nav");
+    if (window.scrollY > 0) {
+      navbar.classList.add("shadow");
+    } else {
+      navbar.classList.remove("shadow");
+    }
+  });
   return (
     <section className="container">
-      <nav className="fixed-top navbar navbar-expand-lg shadow-sm bg-body-tertiary pt-3 px-4">
+      <nav className="fixed-top navbar navbar-expand-lg bg-white py-4 px-4">
         <div className="container-fluid">
           <h4 className="navbar-brand" href="/">
             Simple Header
