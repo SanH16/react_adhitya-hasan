@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/header";
 import FormProduct from "./components/form-product";
 import GenerateNumber from "./components/generate-number";
@@ -7,6 +7,10 @@ import logo from "../assets/images/bootstrap-logo.svg";
 import "../assets/css/styles.css";
 
 export default function CreateProduct() {
+  useEffect(() => {
+    alert("Welcome to the Create Account page 🤖");
+  }, []);
+
   return (
     <>
       <Header />
