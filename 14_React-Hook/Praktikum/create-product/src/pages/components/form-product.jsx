@@ -6,6 +6,7 @@ const FormProduct = () => {
     productCategory: "",
     formFile: "",
     flexradio: "",
+    textArea: "",
     productPrice: "",
   });
 
@@ -36,6 +37,9 @@ const FormProduct = () => {
     if (!values.flexradio) {
       return ["This field cannot be empty, pick one"];
     }
+    if (!values.textArea) {
+      return ["This field cannot be empty, describe your product"];
+    }
     if (!values.productPrice || values.productPrice < 1) {
       return ["Product price must be contain more than 0"];
     }
@@ -57,6 +61,7 @@ const FormProduct = () => {
       productCategory: "",
       formFile: "",
       flexradio: "",
+      textArea: "",
       productPrice: "",
     });
 
@@ -65,6 +70,7 @@ const FormProduct = () => {
     Nama produk: ${values.productName}
     Kategori produk: ${values.productCategory}
     Kesegaran produk: ${values.flexradio}
+    Deskripsi produk: ${values.textArea}
     Harga produk: ${values.productPrice}`;
     alert(alertMessage);
 
@@ -79,6 +85,7 @@ const FormProduct = () => {
         productCategory: values.productCategory,
         formFile: values.formFile,
         flexradio: values.flexradio,
+        textArea: values.textArea,
         productPrice: values.productPrice,
       },
     ]);
@@ -173,6 +180,7 @@ const FormProduct = () => {
                   className="form-check-input"
                   type="radio"
                   name="flexradio"
+                  id="radioSecondHand"
                   value="Second Hand"
                   checked={values.flexradio === "Second Hand"}
                   onChange={handleChange}
@@ -186,6 +194,7 @@ const FormProduct = () => {
                   className="form-check-input"
                   type="radio"
                   name="flexradio"
+                  id="radioRefurbished"
                   value="Refurbished"
                   checked={values.flexradio === "Refurbished"}
                   onChange={handleChange}

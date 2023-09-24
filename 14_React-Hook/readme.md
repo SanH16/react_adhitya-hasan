@@ -47,11 +47,20 @@ Performa lebih baik
 ## Soal Prioritas 2 (Nilai 20)
 
 - Buatlah tombol delete berfungsi, pastikan ketika ingin melakukan delete terdapat alert/modal/notifikasi yang bertuliskan apakah kalian ingin menghapus.
-Jika pilih hapus maka data baru akan terhapus.
-  <p align="center">
-    <img src="Screenshots/alert-delete-1.png" alt="gambar" />
+  Jika pilih hapus maka data baru akan terhapus.
+
+<p align="center">
+<img src="Screenshots/alert-delete-1.png" alt="gambar" />
 </p>
-Jika pilih tidak maka alert/modal/notifikasi akan hilang.
 <p align="center">
     <img src="Screenshots/alert-delete-2.png" alt="gambar" />
+</p>
+
+Jika pilih tidak maka alert/modal/notifikasi akan hilang.
+
+<p align="center">
+    <img src="Screenshots/alert-cancel-1.png" alt="gambar" />
+</p>
+<p align="center">
+    <img src="Screenshots/alert-cancel-2.png" alt="gambar" />
 </p>
