@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/header";
 import FormProduct from "./components/form-product";
-import TableProduct from "./components/table-product";
 import GenerateNumber from "./components/generate-number";
 import Article from "./components/article";
 import logo from "../assets/images/bootstrap-logo.svg";
@@ -24,7 +23,6 @@ export default function CreateProduct() {
       </section>
 
       <FormProduct />
-      <TableProduct />
       <GenerateNumber />
     </>
   );
