@@ -11,9 +11,6 @@ function App() {
         <Route path="/create-product/:id" element={<ProductDetail />} />
       </Routes>
     </Router>
-    // <div>
-    //   <LandingPage />
-    // </div>
   );
 }
 
