@@ -3,19 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 const FormProduct = () => {
   const navigate = useNavigate();
-  //   const action = () => {
-  //     // console.log("navigate:", navigate);
-  //     // console.log("pathname:", `/profile/${nama}`);
-  //     // console.log("state:", { data: props.data });
-  //     navigate({
-  //       pathname: `/create-product/${values.id}`,
-  //       state: values,
-  //     });
-  //   };
 
   const handleProductDetail = (product) => {
     navigate(`/create-product/${product.id}`, {
-      state: { values },
+      state: {
+        ...product,
+      },
     });
   };
 

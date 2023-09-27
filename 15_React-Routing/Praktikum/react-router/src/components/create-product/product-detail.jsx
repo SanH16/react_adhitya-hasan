@@ -1,26 +1,36 @@
-import { useParams } from "react-router-dom";
+// import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
-const ProductDetail = () => {
-  //   console.log(props);
+const ProductDetail = (product) => {
+  // const [product, setProduct] = useState();
+  const { id } = useParams();
 
-  //   const { id } = useParams();
-  const { id, productName, productCategory, flexradio, textArea, productPrice } = useParams();
-  //   const { id, productName, productCategory, flexradio, textArea, productPrice } = product.state.values;
+  console.log(product);
 
+  // useEffect(() => {
+  //   fetch(`/create-product/${id}`)
+  //     .then((res) => res.json())
+  //     .then(setProduct);
+  // }, [id]);
   return (
     <>
       <h1>Product Detail</h1>
-      <p>Product ID : {id}</p>
-      <p>Product Name : {productName}</p>
-      <p>Product Category : {productCategory}</p>
-      <p>Product Freshness : {flexradio}</p>
-      <p>Description : {textArea}</p>
-      <p>Product Price : {productPrice}</p>
-      {/* <p>Product Name : {props.productName}</p>
-      <p>Product Category : {props.productCategory}</p>
-      <p>Product Freshness : {props.flexradio}</p>
-      <p>Description : {props.textArea}</p>
-      <p>Product Price : {props.productPrice}</p> */}
+      {product ? (
+        <div>
+          <p>Product ID : {id}</p>
+          <p>Product Name : {product.productName}</p>
+          <p>Product Category : {product.productCategory}</p>
+          <p>Product Freshness : {product.flexradio}</p>
+          <p>Description : {product.textArea}</p>
+          <p>Product Price : {product.productPrice}</p>
+        </div>
+      ) : (
+        <>
+          <p>Loading...</p>
+          <p>Product ID : {id}</p>
+        </>
+      )}
+      <Link to="/">Back to home</Link>
     </>
   );
 };
