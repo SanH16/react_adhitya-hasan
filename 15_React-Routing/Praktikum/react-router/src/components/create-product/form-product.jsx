@@ -7,7 +7,7 @@ const FormProduct = () => {
   const handleProductDetail = (product) => {
     navigate(`/create-product/${product.id}`, {
       state: {
-        ...product,
+        valueproduct: product,
       },
     });
   };
@@ -26,6 +26,21 @@ const FormProduct = () => {
   const [errors, setErrors] = useState([]);
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === "formFile") {
+      // Mendapatkan file yang dipilih
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.addEventListener("load", (event) => {
+        const image = event.target.result;
+
+        setValues({ ...values, formFile: image });
+      });
+      reader.readAsDataURL(file);
+    } else {
+      setValues({ ...values, [name]: value });
+    }
     setValues({ ...values, [name]: value });
   };
 
@@ -82,7 +97,8 @@ const FormProduct = () => {
     Kategori produk: ${values.productCategory}
     Kesegaran produk: ${values.flexradio}
     Deskripsi produk: ${values.textArea}
-    Harga produk: ${values.productPrice}`;
+    Harga produk: ${values.productPrice}
+    Gambar produk: ${values.formFile}`;
     alert(alertMessage);
 
     // generate ID
@@ -269,8 +285,13 @@ const FormProduct = () => {
             </thead>
             <tbody>
               {productList.map((product) => (
-                <tr key={product.id} className="fs-6" onClick={() => handleProductDetail(product)}>
-                  <td>{product.id}</td>
+                <tr
+                  key={product.id}
+                  className="fs-6"
+                  onClick={() => handleProductDetail(product)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <td>{product.id} (clickme🚀)</td>
                   <td>{product.productName}</td>
                   <td>{product.productCategory}</td>
                   <td>{product.productPrice}</td>
