@@ -4,6 +4,16 @@
 
 ### - React Routing
 
+React routing adalah sebuah library yang digunakan dalam aplikasi React untuk membuat routing dan navigasi antar halaman. Dengan React Router dapat digunakan untuk membuat sebuah aplikasi web yang memiliki banyak halaman dengan URL yang berbeda-beda.
+
+### - SPA vs MPA
+
+SPA merupakan singkatan dari Single Page Application, sedangkan MPA adalah Multi Page Application dimana MPA ini sering digunakan untuk membuat traditional web apps. SPA memiliki keunggulan dalam melakukan routing karena semua component dapat dialokasikan dan dirender hanya pada saat diperlukan dengan bantuan Routing dari React Router.
+
+### Use URL Paramsa
+
+Parameter URL adalah suatu parameter yang nilainya ditetapkan secara dinamis dalam path URL, misal params dinamis yang sering digunakan untuk routing page antara lain : id, name, number . Contoh path="/create-product/:id"
+
 # Task
 
 ## Soal Prioritas 1 (Nilai 80)
