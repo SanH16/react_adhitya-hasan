@@ -45,13 +45,13 @@ const FormProduct = () => {
   };
 
   const validateInput = (values) => {
+    if (!values.productName) {
+      return ["Please enter a valid product name."];
+    }
+
     const productNameRegex = /^[a-zA-Z0-9_-]{10,25}$/;
     if (!productNameRegex.test(values.productName)) {
       return ["Product name must beetwen 10 and 25 characters, only using letters, numbers, underscore, and hyphen"];
-    }
-
-    if (!values.productName) {
-      return ["Please enter a valid product name."];
     }
 
     const productCategoryRegex = /^Low|High|Expensive$/;
