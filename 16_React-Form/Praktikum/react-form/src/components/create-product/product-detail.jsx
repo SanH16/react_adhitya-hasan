@@ -31,7 +31,6 @@ const ProductDetail = () => {
                   <td>{valueproduct.flexradio}</td>
                   <td>{valueproduct.textArea}</td>
                   <td>{valueproduct.productPrice}</td>
-                  {/* <td>{valueproduct.formFile}</td> */}
                   <td>
                     <img style={{ height: "70px" }} src={valueproduct.formFile} alt="ProductImage" />
                   </td>

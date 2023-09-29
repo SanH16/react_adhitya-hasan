@@ -45,29 +45,36 @@ const FormProduct = () => {
   };
 
   const validateInput = (values) => {
-    if (values.productName.length > 10 && values.productName.length < 25) {
-      return ["Product name cannot set more than 10 character"];
+    const productNameRegex = /^[a-zA-Z0-9_-]{10,25}$/;
+    if (!productNameRegex.test(values.productName)) {
+      return ["Product name must beetwen 10 and 25 characters, only using letters, numbers, underscore, and hyphen"];
     }
-    if (values.productName.length > 25) {
-      return ["Last Name must not exceed 25 characters."];
-    }
+
     if (!values.productName) {
       return ["Please enter a valid product name."];
     }
-    if (!values.productCategory) {
-      return ["Please choose Category"];
+
+    const productCategoryRegex = /^Low|High|Expensive$/;
+    if (!productCategoryRegex.test(values.productCategory)) {
+      return ["Product Category must be one of the following: Low, High, or Expensive."];
     }
+
     if (!values.formFile) {
       return ["This field cannot be empty, add image"];
     }
-    if (!values.flexradio) {
-      return ["This field cannot be empty, pick one"];
+
+    const flexRadioRegex = /^Brand New|Second Hand|Refurbished$/;
+    if (!flexRadioRegex.test(values.flexradio)) {
+      return ["Product freshness must be one of the following: Brand New, Second Hand, or Refurbished."];
     }
+
     if (!values.textArea) {
       return ["This field cannot be empty, describe your product"];
     }
-    if (!values.productPrice || values.productPrice < 1) {
-      return ["Product price must be contain more than 0"];
+
+    const productPriceRegex = /^[0-9]+(\.[0-9]{2})?$/;
+    if (!productPriceRegex.test(values.productPrice)) {
+      return ["Product price must be one or more numbers."];
     }
     return true;
   };
@@ -280,21 +287,29 @@ const FormProduct = () => {
                 <th scope="col">Id</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Product Category</th>
+                <th scope="col">Product Freshness</th>
                 <th scope="col">Product Price</th>
+                <th scope="col">Image Product</th>
               </tr>
             </thead>
             <tbody>
               {productList.map((product) => (
-                <tr
-                  key={product.id}
-                  className="fs-6"
-                  onClick={() => handleProductDetail(product)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <td>{product.id} (clickme🚀)</td>
+                <tr>
+                  <td
+                    key={product.id}
+                    className="fs-6"
+                    onClick={() => handleProductDetail(product)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    {product.id} <strong>(show detail🚀)</strong>
+                  </td>
                   <td>{product.productName}</td>
                   <td>{product.productCategory}</td>
+                  <td>{product.flexradio}</td>
                   <td>{product.productPrice}</td>
+                  <td>
+                    <img className="rounded-3" style={{ height: "70px" }} src={product.formFile} alt="ProductImage" />
+                  </td>
                   <td>
                     <button
                       onClick={() => handleDelete(product)}
