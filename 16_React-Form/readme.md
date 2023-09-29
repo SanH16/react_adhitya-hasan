@@ -32,10 +32,10 @@ Validasi form React adalah proses untuk memeriksa apakah inputan form tersebut v
     <img src="Screenshots/product-name-2.png" alt="gambar" />
 </p>
 <p align="center">
-    <img src="Screenshots/product-category.png" alt="gambar" />
+    <img src="Screenshots/product-category-1.png" alt="gambar" />
 </p>
 <p align="center">
-    <img src="Screenshots/product-category-1.png" alt="gambar" />
+    <img src="Screenshots/product-category.png" alt="gambar" />
 </p>
 <p align="center">
     <img src="Screenshots/image-form-2.png" alt="gambar" />
