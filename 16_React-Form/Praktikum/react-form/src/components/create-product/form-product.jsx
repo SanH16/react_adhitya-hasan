@@ -59,13 +59,24 @@ const FormProduct = () => {
       return ["Product Category must be one of the following: Low, High, or Expensive."];
     }
 
-    if (!values.formFile) {
+    const imageFile = values.formFile;
+    if (!imageFile) {
       return ["This field cannot be empty, add image"];
     }
 
-    const flexRadioRegex = /^Brand New|Second Hand|Refurbished$/;
-    if (!flexRadioRegex.test(values.flexradio)) {
-      return ["Product freshness must be one of the following: Brand New, Second Hand, or Refurbished."];
+    const validateImage = /^jpg|jpeg|png|gif$/;
+    if (!validateImage.test(imageFile)) {
+      return ["File must be an image | .jpg .jpeg .png .gif"];
+    }
+
+    const productFreshness = values.flexradio;
+    if (!productFreshness) {
+      return ["This field cannot be empty, pick one"];
+    }
+
+    const productFreshnessOptions = ["Brand New", "Second Hand", "Refurbished"];
+    if (!productFreshnessOptions.includes(productFreshness)) {
+      return ["Product freshness must be one of the following: Brand New, Second Hand, or Refurbished"];
     }
 
     if (!values.textArea) {
@@ -235,6 +246,20 @@ const FormProduct = () => {
                 />
                 <label className="form-check-label" htmlFor="radioRefurbished">
                   Refurbished
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="flexradio"
+                  id="otherRadio"
+                  value="Other"
+                  checked={values.flexradio === "Other"}
+                  onChange={handleChange}
+                />
+                <label className="form-check-label" htmlFor="otherRadio">
+                  Other
                 </label>
               </div>
             </div>
