@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+a {
+  color: #0d6efd !important;
+}
+
+a:hover {
+  color: #6f2bf3 !important;
+}
+
+a:active {
+  background: #0d6efd;
+  color: white !important;
+}
+
+.icon-bootstrap {
+  margin-top: 150px !important;
+}
+
+.file-custom::-webkit-file-upload-button {
+  background: #0d6efd !important;
+  color: #fff !important;
+}
+
+/* table {
+      display: none;
+    } */
+
+nav.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+}
+nav.shadow {
+  /* background-color: white !important; */
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 69px rgba(119, 17, 247, 0.5) !important;
+}
