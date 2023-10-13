@@ -1,1 +1,1 @@
-Rangkuman :
+Code Competence 2

@@ -1,1 +1,1 @@
-Praktikum :
+Praktikum Code Competence 2
