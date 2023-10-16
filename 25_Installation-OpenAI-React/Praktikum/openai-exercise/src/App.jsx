@@ -2,9 +2,9 @@ import "./App.css";
 import { useState } from "react";
 import Markdown from "react-markdown";
 import { openai } from "./configs/openai";
-import { Button, Form, Layout, Space, Spin } from "antd";
+import { Button, Card, Form, Layout, Space, Spin } from "antd";
 import { Content } from "antd/es/layout/layout";
-import { SearchOutlined } from "@ant-design/icons";
+import { SearchOutlined, CheckOutlined } from "@ant-design/icons";
 import { useForm } from "antd/es/form/Form";
 import TextArea from "antd/es/input/TextArea";
 
@@ -45,6 +45,10 @@ function App() {
       });
   }
 
+  const onReset = () => {
+    form.resetFields();
+  };
+
   return (
     <>
       <Layout style={layout}>
@@ -54,22 +58,32 @@ function App() {
             <Form.Item name="query">
               <TextArea type="text" />
             </Form.Item>
-            <Button type="primary" htmlType="submit">
-              <SearchOutlined />
-              Tanyain
-            </Button>
-          </Form>
-          {responseAI && !isLoading && (
-            <div className="result">
-              <h2>Result :</h2>
-              <Markdown>{responseAI}</Markdown>
-            </div>
-          )}
-          {isLoading && (
-            <Space size="middle">
-              <Spin size="large" />
+            <Space wrap>
+              <Button type="primary" htmlType="submit" disabled={isLoading}>
+                <SearchOutlined />
+                {isLoading ? "Loading..." : "Tanyain"}
+              </Button>
+              <Button type="default" htmlType="button" shape="round" onClick={onReset}>
+                Reset
+              </Button>
             </Space>
-          )}
+          </Form>
+          <Card
+            title={responseAI ? <CheckOutlined /> : "Result"}
+            bordered={false}
+            style={{ width: 800, textAlign: "start" }}
+          >
+            {responseAI && !isLoading && (
+              <div className="result">
+                <Markdown>{responseAI}</Markdown>
+              </div>
+            )}
+            {isLoading && (
+              <Space size="middle">
+                <Spin size="large" />
+              </Space>
+            )}
+          </Card>
         </Content>
       </Layout>
     </>
