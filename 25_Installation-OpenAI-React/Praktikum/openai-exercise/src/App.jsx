@@ -25,6 +25,13 @@ const content = {
   gap: "24px",
 };
 
+const cardStyle = {
+  width: 800,
+  textAlign: "start",
+  borderRadius: "16px",
+  boxShadow: "5px 8px 24px 5px rgba(208, 216, 243, 0.5)",
+};
+
 function App() {
   const [form] = useForm();
   const [responseAI, setResponseAI] = useState();
@@ -49,6 +56,12 @@ function App() {
     form.resetFields();
   };
 
+  const onFill = () => {
+    form.setFieldsValue({
+      query: "what is react ?",
+    });
+  };
+
   return (
     <>
       <Layout style={layout}>
@@ -56,7 +69,7 @@ function App() {
           <h3>Tanya aja🚀</h3>
           <Form className="form" onFinish={onFinish} form={form}>
             <Form.Item name="query">
-              <TextArea type="text" />
+              <TextArea type="text" placeholder="what is react ?" />
             </Form.Item>
             <Space wrap>
               <Button type="primary" htmlType="submit" disabled={isLoading}>
@@ -66,15 +79,15 @@ function App() {
               <Button type="default" htmlType="button" shape="round" onClick={onReset}>
                 Reset
               </Button>
+              <Button type="link" htmlType="button" onClick={onFill}>
+                Fill form
+              </Button>
             </Space>
           </Form>
-          <Card
-            title={responseAI ? <CheckOutlined /> : "Result"}
-            bordered={false}
-            style={{ width: 800, textAlign: "start" }}
-          >
+          <Card title="Result" bordered={false} style={cardStyle}>
             {responseAI && !isLoading && (
               <div className="result">
+                <CheckOutlined />
                 <Markdown>{responseAI}</Markdown>
               </div>
             )}
