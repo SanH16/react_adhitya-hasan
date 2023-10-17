@@ -32,7 +32,7 @@ Prompt Engineer merupakan teknik yang digunakan untuk mengoptimalkan hasil maupu
 - Pakai tugas yang telah menerapkan OpenAI API dan terapkan prompt sehingga dapat berfungsi khusus untuk melakukan Q&A (tema Q&A bebas)
 
 <p align="center">
-    <img src="Screenshots/prompt-chat.png" alt="gambar" />
+    <img src="Screenshots/prompt_chat.png" alt="gambar" />
 </p>
 
 ## Soal Prioritas 2 (30)
