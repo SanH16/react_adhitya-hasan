@@ -1,15 +1,15 @@
-import "./App.css";
+import React from "react";
+import "../App.css";
 import { useEffect, useState } from "react";
-import Markdown from "react-markdown";
-import { openai } from "./configs/openai";
+import { openai } from "../configs/openai";
 import { Button, Card, Form, Layout, Space, Spin, message } from "antd";
 import { Content } from "antd/es/layout/layout";
-import { SearchOutlined, CheckOutlined, RobotOutlined } from "@ant-design/icons";
+import { RocketOutlined, PictureOutlined } from "@ant-design/icons";
 import { useForm } from "antd/es/form/Form";
 import TextArea from "antd/es/input/TextArea";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ButtonFloat from "./components/button-float";
+import ButtonFloat from "./button-float";
 
 const layout = {
   background: "white",
@@ -29,14 +29,14 @@ const content = {
 };
 
 const cardStyle = {
-  background: "#90C2E7",
+  background: "#C9E3AC",
   width: 800,
-  textAlign: "start",
+  textAlign: "center",
   borderRadius: "16px",
   boxShadow: "5px 8px 24px 5px rgba(208, 216, 243, 0.6)",
 };
 
-function App() {
+export default function ImageGenerator() {
   const [form] = useForm();
   const [responseAI, setResponseAI] = useState();
   const [isLoading, setIsLoading] = useState(false);
@@ -51,24 +51,24 @@ function App() {
     if (!values.query) {
       messageApi.open({
         type: "error",
-        content: "Please input your question",
+        content: "Please input type of image",
       });
       return;
     }
     setIsLoading(true);
 
-    openai.chat.completions
-      .create({
-        model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: values.query }],
-        temperature: 1,
+    openai.images
+      .generate({
+        prompt: values.query,
+        n: 1,
+        size: "512x512",
       })
       .then((response) => {
         if (response) {
-          setResponseAI(response.choices[0].message.content);
+          setResponseAI(response.data[0].url);
           messageApi.open({
             type: "success",
-            content: "I have answered your question 🚀",
+            content: "Generate Sucessfull 🚀",
           });
         } else {
           messageApi.open({
@@ -86,19 +86,18 @@ function App() {
 
   const onFill = () => {
     form.setFieldsValue({
-      query: "what is react ?",
+      query: "Nasi Goreng",
     });
   };
-
   return (
     <>
       <Layout style={layout}>
         <Content style={content}>
-          <h3>Tanya aja🚀</h3>
-          <RobotOutlined data-aos="zoom-in" data-aos-duration="1000" style={{ fontSize: 80 }} />
+          <h3>Image Generator🚀</h3>
+          <RocketOutlined data-aos="zoom-in" data-aos-duration="1000" style={{ fontSize: 80 }} />
           <Form className="form" onFinish={onFinish} form={form}>
             <Form.Item name="query" data-aos="fade-right" data-aos-duration="1000">
-              <TextArea type="text" placeholder="what is react ?" />
+              <TextArea type="text" placeholder="Nasi Goreng" />
             </Form.Item>
             {contextHolder}
             <Space wrap>
@@ -110,8 +109,8 @@ function App() {
                 data-aos-delay="200"
                 disabled={isLoading}
               >
-                <SearchOutlined />
-                {isLoading ? "Loading..." : "Tanyain"}
+                <PictureOutlined />
+                {isLoading ? "Loading..." : "Generate"}
               </Button>
               <Button
                 type="default"
@@ -145,9 +144,8 @@ function App() {
             style={cardStyle}
           >
             {responseAI && !isLoading && (
-              <div className="result">
-                <CheckOutlined />
-                <Markdown>{responseAI}</Markdown>
+              <div className="image-result">
+                <img src={responseAI}></img>
               </div>
             )}
             {isLoading && (
@@ -162,5 +160,3 @@ function App() {
     </>
   );
 }
-
-export default App;
