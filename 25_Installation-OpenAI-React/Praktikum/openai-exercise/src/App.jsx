@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import { openai } from "./configs/openai";
 import { Button, Card, Form, Layout, Space, Spin } from "antd";
@@ -7,6 +7,8 @@ import { Content } from "antd/es/layout/layout";
 import { SearchOutlined, CheckOutlined } from "@ant-design/icons";
 import { useForm } from "antd/es/form/Form";
 import TextArea from "antd/es/input/TextArea";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const layout = {
   background: "white",
@@ -36,6 +38,10 @@ function App() {
   const [form] = useForm();
   const [responseAI, setResponseAI] = useState();
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   function onFinish(values) {
     console.log(values);
@@ -68,23 +74,52 @@ function App() {
         <Content style={content}>
           <h3>Tanya aja🚀</h3>
           <Form className="form" onFinish={onFinish} form={form}>
-            <Form.Item name="query">
+            <Form.Item name="query" data-aos="fade-right" data-aos-duration="1000">
               <TextArea type="text" placeholder="what is react ?" />
             </Form.Item>
             <Space wrap>
-              <Button type="primary" htmlType="submit" disabled={isLoading}>
+              <Button
+                type="primary"
+                htmlType="submit"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                disabled={isLoading}
+              >
                 <SearchOutlined />
                 {isLoading ? "Loading..." : "Tanyain"}
               </Button>
-              <Button type="default" htmlType="button" shape="round" onClick={onReset}>
+              <Button
+                type="default"
+                htmlType="button"
+                shape="round"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                onClick={onReset}
+              >
                 Reset
               </Button>
-              <Button type="link" htmlType="button" onClick={onFill}>
+              <Button
+                type="link"
+                htmlType="button"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+                onClick={onFill}
+              >
                 Fill form
               </Button>
             </Space>
           </Form>
-          <Card title="Result" bordered={false} style={cardStyle}>
+          <Card
+            title="Result"
+            bordered={false}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            style={cardStyle}
+          >
             {responseAI && !isLoading && (
               <div className="result">
                 <CheckOutlined />
