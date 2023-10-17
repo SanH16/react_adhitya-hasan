@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import { openai } from "./configs/openai";
-import { Button, Card, Form, Layout, Space, Spin } from "antd";
+import { Button, Card, Form, Layout, Space, Spin, message } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { SearchOutlined, CheckOutlined } from "@ant-design/icons";
 import { useForm } from "antd/es/form/Form";
@@ -28,16 +28,18 @@ const content = {
 };
 
 const cardStyle = {
+  background: "#90C2E7",
   width: 800,
   textAlign: "start",
   borderRadius: "16px",
-  boxShadow: "5px 8px 24px 5px rgba(208, 216, 243, 0.5)",
+  boxShadow: "5px 8px 24px 5px rgba(208, 216, 243, 0.6)",
 };
 
 function App() {
   const [form] = useForm();
   const [responseAI, setResponseAI] = useState();
   const [isLoading, setIsLoading] = useState(false);
+  const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
     AOS.init();
@@ -54,6 +56,10 @@ function App() {
       })
       .then((response) => {
         setResponseAI(response.choices[0].message.content);
+        messageApi.open({
+          type: "success",
+          content: "Successfully created🚀",
+        });
         setIsLoading(false);
       });
   }
@@ -77,6 +83,7 @@ function App() {
             <Form.Item name="query" data-aos="fade-right" data-aos-duration="1000">
               <TextArea type="text" placeholder="what is react ?" />
             </Form.Item>
+            {contextHolder}
             <Space wrap>
               <Button
                 type="primary"
