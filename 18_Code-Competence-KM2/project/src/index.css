@@ -57,10 +57,11 @@ button.discover {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 100%));
-  transition: all 0.3s ease;
 }
 
 button.discover:hover {
+  transition: all 0.3s ease !important;
+
   color: whitesmoke;
   margin-left: 15px;
   background: var(--Button-Linear, linear-gradient(180deg, #bbb5ff -8.33%, #5c67e1 0%));

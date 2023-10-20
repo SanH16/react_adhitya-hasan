@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/icon/logo-tripify.svg";
 import { Link } from "react-router-dom";
+import { Tooltip } from "antd";
 
 export default function Navbar() {
   const [navbarShadow, setNavbarShadow] = useState(false);
+  const colors = ["#5c67e1"];
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -52,28 +54,38 @@ export default function Navbar() {
                     About
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                    Resources
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                    Contact
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                    Blog
-                  </Link>
-                </li>
+                <Tooltip title="Available Soon😊" color={colors}>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Resources
+                    </Link>
+                  </li>
+                </Tooltip>
+                <Tooltip title="Available Soon😊" color={colors}>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Contact
+                    </Link>
+                  </li>
+                </Tooltip>
+                <Tooltip title="Available Soon😊" color={colors}>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Blog
+                    </Link>
+                  </li>
+                </Tooltip>
               </ul>
-              <button type="button" className="btn sign-in me-4">
-                Sign In
-              </button>
-              <button type="button" className="btn register">
-                Register
-              </button>
+              <Tooltip title="Available Soon😊" color={colors}>
+                <button type="button" className="btn sign-in me-4">
+                  Sign In
+                </button>
+              </Tooltip>
+              <Tooltip title="Available Soon😊" color={colors}>
+                <button type="button" className="btn register">
+                  Register
+                </button>
+              </Tooltip>
             </div>
           </div>
         </nav>
