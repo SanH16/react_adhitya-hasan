@@ -3,7 +3,12 @@ import logoFooter from "../../assets/icon/logo-tripify.svg";
 
 export default function Footer() {
   return (
-    <footer className="container col-12 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <footer
+      className="container col-lg-12 col-sm-12 mt-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div className="row ">
         <div className="tripify-heading">
           <img src={logoFooter} alt="Logo" height="auto" className="d-inline-block align-text-top mb-4 ms-4" />
@@ -78,10 +83,10 @@ export default function Footer() {
       </div>
       <hr />
       <div className="d-flex col-12">
-        <div className="col-6 text-start">
+        <div className="col-lg-6 text-start">
           <p className="copy">Copyright ©️ 2023 SanTech</p>
         </div>
-        <div className="col-6 text-end">
+        <div className="col-lg-6 text-end">
           <a href="https://github.com/SanH16" style={{ textDecoration: "none" }}>
             <p className="agency">
               Tripify Travel Agency | <span>https://github.com/SanH16</span>

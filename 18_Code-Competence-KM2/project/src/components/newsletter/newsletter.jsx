@@ -61,7 +61,7 @@ export default function Newsletter() {
 
       {/* Newsletter */}
       <div className="row mb-5" style={{ marginTop: 190 }}>
-        <div id="newsletter" className="col-6 pt-5">
+        <div id="newsletter" className="col-lg-6 col-sm-12 col-md-12 pt-5">
           <h1 className="newsletter mb-5" data-aos="zoom-in-right" data-aos-duration="1000">
             Get more update subscribe our Newsletter
           </h1>

@@ -14,17 +14,17 @@ export default function Destination() {
       {/* Destination content  */}
       <div className="row justify-content-center">
         <div className="container-fluid card destination col-12" data-aos="zoom-in" data-aos-duration="1000">
-          <div className="row ms-3 my-auto">
+          <div className="row ms-3 my-auto ">
             <div className="col-3">
               <div className="card" style={{ borderColor: "transparent" }}>
                 <div className="row g-3 align-items-center">
-                  <div className="col-4">
+                  <div className="col-lg-4 col-md-6">
                     <img src={iconFlag} className="img-fluid rounded" alt="Flag" />
                   </div>
                   <div className="col-md-8">
-                    <div className="card-body">
-                      <p className="card-text text-secondary">Destination</p>
-                      <p className="card-text">
+                    <div className="card-body card-destination">
+                      <p className="card-text text-secondary ct">Destination</p>
+                      <p className="card-text ct">
                         <small className="text-black fw-medium">Jakarta, Indonesia</small>
                       </p>
                     </div>
@@ -35,13 +35,13 @@ export default function Destination() {
             <div className="col-3">
               <div className="card" style={{ borderColor: "transparent" }}>
                 <div className="row g-3 align-items-center">
-                  <div className="col-4">
+                  <div className="col-lg-4 col-md-6">
                     <img src={iconDollar} className="img-fluid rounded" alt="Price" />
                   </div>
                   <div className="col-md-8">
-                    <div className="card-body">
-                      <p className="card-text text-secondary">Average Price</p>
-                      <p className="card-text">
+                    <div className="card-body card-destination">
+                      <p className="card-text text-secondary ct">Average Price</p>
+                      <p className="card-text ct">
                         <small className="text-black fw-medium">$120 - $900</small>
                       </p>
                     </div>
@@ -52,13 +52,13 @@ export default function Destination() {
             <div className="col-3">
               <div className="card" style={{ borderColor: "transparent" }}>
                 <div className="row g-3 align-items-center">
-                  <div className="col-4">
+                  <div className="col-lg-4 col-md-6">
                     <img src={iconDate} className="img-fluid rounded" alt="Date" />
                   </div>
                   <div className="col-md-8">
-                    <div className="card-body">
-                      <p className="card-text text-secondary">Date</p>
-                      <p className="card-text">
+                    <div className="card-body card-destination">
+                      <p className="card-text text-secondary ct">Date</p>
+                      <p className="card-text ct">
                         <small className="text-black fw-medium">September 2023</small>
                       </p>
                     </div>
@@ -77,8 +77,15 @@ export default function Destination() {
                       ref={scrollNewsRef}
                       onClick={handleScrollNews}
                     >
-                      <i className="fa fa-search text-white me-3" />
-                      Search
+                      {window.innerWidth <= 576 ? (
+                        <span>
+                          <i className="fa fa-search text-white me-3" />
+                        </span>
+                      ) : (
+                        <span>
+                          <i className="fa fa-search text-white me-3" /> Search
+                        </span>
+                      )}
                     </button>
                   </div>
                 </div>

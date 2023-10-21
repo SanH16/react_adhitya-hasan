@@ -288,3 +288,123 @@ ul {
   color: #03c;
   cursor: pointer;
 }
+
+/* Responsive */
+@media (min-width: 576px) and (max-width: 768px) {
+  h1.tripify {
+    font-size: 42px;
+    font-weight: 700;
+  }
+  p.text-paragraf {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  img.tripify-image {
+    width: auto;
+    height: 450px;
+    flex-shrink: 0;
+  }
+
+  div.destination {
+    height: 130px;
+    flex-shrink: 0;
+  }
+
+  .row .ms-3 {
+    margin-left: 0 !important;
+  }
+
+  .row .g-3 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.card-destination {
+    padding: 0;
+  }
+
+  div > p.card-text.ct {
+    font-size: 10px;
+    line-height: 0px;
+  }
+
+  div.cards-service {
+    margin-left: 0 !important;
+  }
+
+  .card-img {
+    width: 70px !important;
+    margin: 1em 0 1em 1em;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 576px) {
+  h1.tripify {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  p.text-paragraf {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  img.tripify-image {
+    width: auto;
+    height: 250px;
+    flex-shrink: 0;
+  }
+
+  div > p.card-text.ct {
+    font-size: 10px;
+    line-height: 0px;
+  }
+
+  .row .g-3 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.card-destination {
+    padding: 0;
+  }
+
+  div.cards-service {
+    margin-left: 0 !important;
+  }
+
+  button.search {
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-fluid {
+    height: 50px !important;
+  }
+
+  .input-email {
+    width: 24.2rem !important;
+  }
+
+  img.newsletter-image {
+    height: 300px;
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .tripify-heading {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+
+  .tripify-heading .icon-hover li {
+    margin: 24px 10px 10px 24px;
+  }
+
+  h1.newsletter {
+    font-size: 30px;
+  }
+}

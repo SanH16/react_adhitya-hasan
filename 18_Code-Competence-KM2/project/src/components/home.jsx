@@ -8,7 +8,6 @@ import Newsletter from "./newsletter/newsletter";
 import Footer from "./footer/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import About from "./about/about";
 
 export default function Home() {
   useEffect(() => {
@@ -22,10 +21,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main id="home" className="container col-10">
+      <main id="home" className="container col-lg-10 col-md-10 col-sm-12">
         {/* Main content */}
         <div className="row">
-          <div className="col-5 pt-5">
+          <div className="col-lg-5 col-sm-12 pt-5">
             <h1 className="tripify" data-aos="fade-right" data-aos-duration="1000">
               Temukan tempat impian anda di <span>Tripify.</span>
             </h1>
@@ -45,7 +44,7 @@ export default function Home() {
               Discover Now
             </button>
           </div>
-          <div className="col-7">
+          <div className="col-lg-7 col-sm-12">
             <img
               src={imageVector}
               alt="gambar"

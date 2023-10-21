@@ -13,9 +13,10 @@ export default function Services() {
       {/* Service content */}
       <section id="services">
         <div className="row mb-5" style={{ marginTop: 190 }}>
-          <div className="col-4 pt-5 me-5">
+          <div className="col-lg-4 col-md-10 col-sm-12 pt-5 me-5">
             <h1 className="tripify" data-aos="fade-right" data-aos-duration="1000">
-              We Offer🚀 best services
+              We Offer🚀 <br />
+              best services
             </h1>
             <p className="text-paragraf mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
               Discover the world like never before with our innovative travel app.
@@ -34,8 +35,13 @@ export default function Services() {
             </button>
           </div>
 
-          <div className="col-3 ms-5" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-            <div className="card rounded-5 services">
+          <div
+            className="col-lg-3 col-md-6 col-sm-6 ms-5 cards-service mt-5"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div className="card rounded-5 services mb-3">
               <img src={iconPlane} className="card-img" alt="Tour" />
               <div className="card-body">
                 <h2 className="card-title ms-3 fw-bold mb-4">Best tour guide</h2>
@@ -47,7 +53,12 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="col-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+          <div
+            className="col-lg-3 col-md-6 col-sm-6"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div className="card rounded-5 services">
               <img src={iconAtm} className="card-img" alt="Booking" />
               <div className="card-body">
