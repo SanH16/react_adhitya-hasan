@@ -54,11 +54,7 @@ export default function Navbar() {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <LinkRoll to="" className="nav-link">
-                    About
-                  </LinkRoll>
-                </li>
+
                 <Tooltip title={location.pathname === "/" ? "Click Me😊" : "Go Home🚀"} color={colors}>
                   <li className="nav-item">
                     <LinkRoll
@@ -74,6 +70,7 @@ export default function Navbar() {
                     </LinkRoll>
                   </li>
                 </Tooltip>
+
                 <Tooltip title={location.pathname === "/" ? "Click Me😊" : "Go Home🚀"} color={colors}>
                   <li className="nav-item">
                     <LinkRoll
@@ -89,6 +86,23 @@ export default function Navbar() {
                     </LinkRoll>
                   </li>
                 </Tooltip>
+
+                <Tooltip title={location.pathname === "/" ? "Click Me😊" : "Go Home🚀"} color={colors}>
+                  <li className="nav-item">
+                    <LinkRoll
+                      activeClass="active"
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={-150}
+                      duration={500}
+                      className="nav-link"
+                    >
+                      About
+                    </LinkRoll>
+                  </li>
+                </Tooltip>
+
                 <Tooltip title="Available Soon😊" color={colors}>
                   <li className="nav-item">
                     <Link to="/blog" className={location.pathname === "/blog" ? "nav-link active" : "nav-link"}>
@@ -97,11 +111,13 @@ export default function Navbar() {
                   </li>
                 </Tooltip>
               </ul>
+
               <Tooltip title="Available Soon😊" color={colors}>
                 <button type="button" className="btn sign-in me-4">
                   Sign In
                 </button>
               </Tooltip>
+
               <Tooltip title="Available Soon😊" color={colors}>
                 <button type="button" className="btn register">
                   Register
