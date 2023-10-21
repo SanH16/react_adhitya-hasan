@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/icon/logo-tripify.svg";
 import { Link } from "react-router-dom";
+import { Link as LinkRoll } from "react-scroll";
 import { Tooltip } from "antd";
 
 export default function Navbar() {
@@ -45,32 +46,52 @@ export default function Navbar() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul className="navbar-nav head">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active" aria-current="page">
+                  <Link
+                    to="/"
+                    className={location.pathname === "/" && !scrollY ? "nav-link active" : "nav-link"}
+                    aria-current="page"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link">
+                  <LinkRoll to="" className="nav-link">
                     About
-                  </Link>
+                  </LinkRoll>
                 </li>
-                <Tooltip title="Available Soon😊" color={colors}>
+                <Tooltip title={location.pathname === "/" ? "Click Me😊" : "Go Home🚀"} color={colors}>
                   <li className="nav-item">
-                    <Link to="/" className="nav-link">
-                      Resources
-                    </Link>
+                    <LinkRoll
+                      activeClass="active"
+                      to="services"
+                      spy={true}
+                      smooth={true}
+                      offset={-200}
+                      duration={500}
+                      className="nav-link"
+                    >
+                      Services
+                    </LinkRoll>
                   </li>
                 </Tooltip>
-                <Tooltip title="Available Soon😊" color={colors}>
+                <Tooltip title={location.pathname === "/" ? "Click Me😊" : "Go Home🚀"} color={colors}>
                   <li className="nav-item">
-                    <Link to="/" className="nav-link">
+                    <LinkRoll
+                      activeClass="active"
+                      to="newsletter"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
+                      className="nav-link"
+                    >
                       Contact
-                    </Link>
+                    </LinkRoll>
                   </li>
                 </Tooltip>
                 <Tooltip title="Available Soon😊" color={colors}>
                   <li className="nav-item">
-                    <Link to="/" className="nav-link">
+                    <Link to="/blog" className={location.pathname === "/blog" ? "nav-link active" : "nav-link"}>
                       Blog
                     </Link>
                   </li>

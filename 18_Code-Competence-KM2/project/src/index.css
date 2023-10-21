@@ -18,6 +18,7 @@ a.nav-link {
   justify-content: center;
   align-items: center;
   margin: 0 25px;
+  cursor: pointer;
 }
 
 a.nav-link:hover {
@@ -70,6 +71,9 @@ button.discover:hover {
 main {
   margin-top: 10rem !important;
   /* border: 10px solid green; */
+}
+main.blog {
+  margin-top: 8rem !important;
 }
 
 h1.tripify {

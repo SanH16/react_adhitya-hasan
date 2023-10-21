@@ -11,52 +11,56 @@ export default function Services() {
   return (
     <>
       {/* Service content */}
-      <div className="row mb-5" style={{ marginTop: 190 }}>
-        <div className="col-4 pt-5 me-5">
-          <h1 className="tripify" data-aos="fade-right" data-aos-duration="1000">
-            We Offer🚀 best services
-          </h1>
-          <p className="text-paragraf mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-            Discover the world like never before with our innovative travel app.
-          </p>
-          <button
-            id="scroll-up"
-            type="button"
-            className="btn discover mt-3"
-            ref={scrollUpRef}
-            onClick={handleScrollUp}
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            Explore more
-          </button>
-        </div>
-        <div className="col-3 ms-5" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-          <div className="card rounded-5 services">
-            <img src={iconPlane} className="card-img" alt="Tour" />
-            <div className="card-body">
-              <h2 className="card-title ms-3 fw-bold mb-4">Best tour guide</h2>
-              <p className="card-text text-secondary mx-3 mb-2" style={{ fontSize: 15, fontWeight: 300 }}>
-                Discover the world like never before with our innovate travel app. Discover the world like never before
-                with our innovate travel app. DIscover the world.
-              </p>
+      <section id="services">
+        <div className="row mb-5" style={{ marginTop: 190 }}>
+          <div className="col-4 pt-5 me-5">
+            <h1 className="tripify" data-aos="fade-right" data-aos-duration="1000">
+              We Offer🚀 best services
+            </h1>
+            <p className="text-paragraf mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+              Discover the world like never before with our innovative travel app.
+            </p>
+            <button
+              id="scroll-up"
+              type="button"
+              className="btn discover mt-3"
+              ref={scrollUpRef}
+              onClick={handleScrollUp}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              Explore more
+            </button>
+          </div>
+
+          <div className="col-3 ms-5" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+            <div className="card rounded-5 services">
+              <img src={iconPlane} className="card-img" alt="Tour" />
+              <div className="card-body">
+                <h2 className="card-title ms-3 fw-bold mb-4">Best tour guide</h2>
+                <p className="card-text text-secondary mx-3 mb-2" style={{ fontSize: 15, fontWeight: 300 }}>
+                  Discover the world like never before with our innovate travel app. Discover the world like never
+                  before with our innovate travel app. DIscover the world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+            <div className="card rounded-5 services">
+              <img src={iconAtm} className="card-img" alt="Booking" />
+              <div className="card-body">
+                <h2 className="card-title ms-3 fw-bold mb-4">Easy booking</h2>
+                <p className="card-text text-secondary mx-3 mb-2" style={{ fontSize: 15, fontWeight: 300 }}>
+                  Discover the world like never before with our innovate travel app. Discover the world like never
+                  before with our innovate travel app. DIscover the world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
-          <div className="card rounded-5 services">
-            <img src={iconAtm} className="card-img" alt="Booking" />
-            <div className="card-body">
-              <h2 className="card-title ms-3 fw-bold mb-4">Easy booking</h2>
-              <p className="card-text text-secondary mx-3 mb-2" style={{ fontSize: 15, fontWeight: 300 }}>
-                Discover the world like never before with our innovate travel app. Discover the world like never before
-                with our innovate travel app. DIscover the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

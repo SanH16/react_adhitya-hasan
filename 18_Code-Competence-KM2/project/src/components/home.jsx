@@ -8,6 +8,7 @@ import Newsletter from "./newsletter/newsletter";
 import Footer from "./footer/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "./about/about";
 
 export default function Home() {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="container col-10">
+      <main id="home" className="container col-10">
         {/* Main content */}
         <div className="row">
           <div className="col-5 pt-5">
@@ -56,6 +57,7 @@ export default function Home() {
           </div>
         </div>
         <Destination />
+        {/* <About /> */}
         <Services />
         <Newsletter />
       </main>
