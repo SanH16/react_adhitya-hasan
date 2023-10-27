@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addProduct, deleteProduct, selectProduct } from "../../store/products";
 
 const FormProduct = () => {
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const products = useSelector(selectProduct);
 
+  const navigate = useNavigate();
   const handleProductDetail = (product) => {
     navigate(`/create-product/${product.id}`, {
       state: {
@@ -20,8 +24,6 @@ const FormProduct = () => {
     textArea: "",
     productPrice: "",
   });
-
-  const [productList, setProductList] = useState([]);
 
   const [errors, setErrors] = useState([]);
 
@@ -101,6 +103,7 @@ const FormProduct = () => {
       return;
     }
 
+    // alert
     setValues({
       productName: "",
       productCategory: "",
@@ -123,24 +126,23 @@ const FormProduct = () => {
     // generate ID
     const productId = crypto.randomUUID();
 
-    setProductList([
-      ...productList,
-      {
+    dispatch(
+      addProduct({
         id: productId,
         productName: values.productName,
         productCategory: values.productCategory,
-        formFile: values.formFile,
-        flexradio: values.flexradio,
-        textArea: values.textArea,
-        productPrice: values.productPrice,
-      },
-    ]);
+        productFreshness: values.flexradio,
+        image: values.formFile,
+        textDescription: values.textArea,
+        priceProduct: values.productPrice,
+      })
+    );
   };
 
   const handleDelete = (product) => {
     const question = window.confirm("Apakah yakin ingin menghapus ?");
     if (question) {
-      setProductList(productList.filter((item) => item.id !== product.id));
+      dispatch(deleteProduct({ id: product.id }));
     }
   };
 
@@ -319,26 +321,26 @@ const FormProduct = () => {
               </tr>
             </thead>
             <tbody>
-              {productList.map((product) => (
+              {products.map((products) => (
                 <tr>
                   <td
-                    key={product.id}
+                    key={products.id}
                     className="fs-6"
-                    onClick={() => handleProductDetail(product)}
+                    onClick={() => handleProductDetail(products)}
                     style={{ cursor: "pointer" }}
                   >
-                    {product.id} <strong>(show detail🚀)</strong>
+                    {products.id} <strong>(show detail🚀)</strong>
                   </td>
-                  <td>{product.productName}</td>
-                  <td>{product.productCategory}</td>
-                  <td>{product.flexradio}</td>
-                  <td>{product.productPrice}</td>
+                  <td>{products.productName}</td>
+                  <td>{products.productCategory}</td>
+                  <td>{products.productFreshness}</td>
+                  <td>{products.priceProduct}</td>
                   <td>
-                    <img className="rounded-3" style={{ height: "70px" }} src={product.formFile} alt="ProductImage" />
+                    <img className="rounded-3" style={{ height: "70px" }} src={products.image} alt={products.image} />
                   </td>
                   <td>
                     <button
-                      onClick={() => handleDelete(product)}
+                      onClick={() => handleDelete(products)}
                       className="btn btn-outline-danger mx-2 my-0"
                       type="button"
                     >

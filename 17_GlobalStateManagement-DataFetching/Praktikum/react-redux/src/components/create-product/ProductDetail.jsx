@@ -1,8 +1,9 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { selectProduct } from "../../store/products";
 
 const ProductDetail = () => {
-  const location = useLocation();
-  const { valueproduct } = location.state;
+  const products = useSelector(selectProduct);
   const { id } = useParams();
 
   return (
@@ -23,18 +24,20 @@ const ProductDetail = () => {
               </tr>
             </thead>
             <tbody className="text-center">
-              {valueproduct ? (
-                <tr key={valueproduct.id}>
-                  <td>{id}</td>
-                  <td>{valueproduct.productName}</td>
-                  <td>{valueproduct.productCategory}</td>
-                  <td>{valueproduct.flexradio}</td>
-                  <td>{valueproduct.textArea}</td>
-                  <td>{valueproduct.productPrice}</td>
-                  <td>
-                    <img style={{ height: "70px" }} src={valueproduct.formFile} alt="ProductImage" />
-                  </td>
-                </tr>
+              {products ? (
+                products.map((product) => (
+                  <tr key={product.id}>
+                    <td>{product.id}</td>
+                    <td>{product.productName}</td>
+                    <td>{product.productCategory}</td>
+                    <td>{product.productFreshness}</td>
+                    <td>{product.textDescription}</td>
+                    <td>{product.priceProduct}</td>
+                    <td>
+                      <img style={{ height: "70px" }} src={product.image} alt={product.image} />
+                    </td>
+                  </tr>
+                ))
               ) : (
                 <>
                   <p>Loading...</p>
@@ -49,26 +52,28 @@ const ProductDetail = () => {
             <button className="btn btn-outline-primary">Back to home</button>
           </div>
         </Link>
-        <div className="col-12 mb-5">
-          <div className="mx-auto card w-50 shadow-lg border-0 rounded-4">
-            <img
-              src={valueproduct.formFile}
-              className="card-img-top rounded-4"
-              alt="ProductImage"
-              style={{ height: "400px" }}
-            />
+        {products.map((product) => (
+          <div className="col-12 mb-5">
+            <div className=" mx-auto card w-50 shadow-lg border-0 rounded-4">
+              <img
+                src={product.image}
+                className="card-img-top rounded-4"
+                alt="ProductImage"
+                style={{ height: "400px" }}
+              />
 
-            <div className="card-body">
-              <h5 className="card-title">Product Name : {valueproduct.productName}</h5>
-              <p className="card-text">Product Category : {valueproduct.productCategory}</p>
-              <p className="card-text">Product Freshness : {valueproduct.flexradio}</p>
-              <p className="card-text">Description : {valueproduct.textArea}</p>
-              <p className="card-text">
-                Product Price : {valueproduct.productPrice} <span className="text-success">$</span>
-              </p>
+              <div className="card-body">
+                <h5 className="card-title">Product Name : {product.productName}</h5>
+                <p className="card-text">Product Category : {product.productCategory}</p>
+                <p className="card-text">Product Freshness : {product.productFreshness}</p>
+                <p className="card-text">Description : {product.textDescription}</p>
+                <p className="card-text">
+                  Product Price : {product.priceProduct} <span className="text-success">$</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </section>
     </>
   );
