@@ -1,61 +1,41 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../utils/auth";
-import { APIauth } from "../apis/APIauth.js";
-import { Button, Checkbox, Form, Input } from "antd";
+// import { APIauth } from "../apis/APIauth.js";
+import { Button, Form, Input } from "antd";
 
 function LoginPage() {
   const navigate = useNavigate();
-  // const { search } = useLocation();
+  //   const { search } = useLocation();
 
   const onFinish = (e) => {
     // e.preventDefault();
     const formData = new FormData(e.target);
     const { username, password } = Object.fromEntries(formData);
-
-    APIauth.login({ username, password }).then(async (response) => {
-      console.log(response);
-      if (response.status === 400) {
-        return alert("your username or password is wrong");
-      }
-
-      const { token } = response.data;
+    fetch("https://dummyjson.com/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username, // kminchelle
+        password, // 0lelplR
+      }),
+    }).then(async (res) => {
+      if (res.status === 400) return alert("your username or password is wrong");
+      const { token } = await res.json();
       auth.storeAuthCredential(token);
-
-      return navigate("/");
+      let returnTo = "/";
+      return navigate(returnTo);
     });
+
     console.log("Success:", e);
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-  //     const formData = new FormData(e.target);
-  //     const { username, password } = Object.fromEntries(formData);
-
-  //     APIauth.login({ username, password }).then(async (response) => {
-  //       console.log(response);
-  //       if (response.status === 400) {
-  //         return alert("your username or password is wrong");
-  //       }
-
-  //       const { token } = response.data;
-  //       auth.storeAuthCredential(token);
-
-  //       return navigate("/");
-  //     });
-  //   };
-
   return (
     <div>
       <h1>Login Page</h1>
-      {/* <form onSubmit={handleSubmit}>
-        <input type="username" name="username" placeholder="enter your username" />
-        <input type="password" name="password" placeholder="enter your password" />
-        <button type="submit">Login</button>
-      </form> */}
 
       <Form
         name="basic"

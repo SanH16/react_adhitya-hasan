@@ -10,8 +10,6 @@ export default function PrivateRouter() {
       <>
         <Outlet />; // jika sudah login, navigate home
       </>
-      //   <Layout>
-      //   </Layout>
     );
   }
 
