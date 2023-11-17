@@ -2,7 +2,15 @@
 
 ## 3 Poin penting
 
-## Authentication
+## Authentication React
+
+Authentication React adalah proses memverifikasi identitas pengguna sebelum mereka dapat mengakses aplikasi. Authentication penting untuk memastikan bahwa hanya pengguna yang berwenang yang dapat mengakses data dan fungsionalitas aplikasi.
+
+Ada beberapa poin penting yang perlu diperhatikan saat menerapkan otentikasi React, yaitu:
+
+Keamanan: Data pengguna harus disimpan dengan aman untuk mencegah penyalahgunaan.
+Kekuatan: Mekanisme otentikasi yang kuat harus digunakan untuk melindungi data pengguna dari akses yang tidak sah.
+Pengalaman pengguna: Proses otentikasi harus mudah digunakan dan tidak menyulitkan pengguna.
 
 <hr />
 
